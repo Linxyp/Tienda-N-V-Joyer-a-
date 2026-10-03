@@ -1,0 +1,2072 @@
+[
+  {
+    "id": "nv-t1",
+    "sku": "NV-T1",
+    "slug": "topos-corazon-mini",
+    "nombre": "Topos Corazón Mini",
+    "categoria": "topos",
+    "precio": 70000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-corazon-mini.webp",
+        "mini": "img/nv/topos-corazon-mini-m.webp"
+      }
+    ],
+    "huella": "f7e7e7f7dede6e26"
+  },
+  {
+    "id": "nv-t2",
+    "sku": "NV-T2",
+    "slug": "topos-amore-halo-9-mm",
+    "nombre": "Topos Amore Halo 9 mm",
+    "categoria": "topos",
+    "precio": 90000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-amore-halo-9-mm.webp",
+        "mini": "img/nv/topos-amore-halo-9-mm-m.webp"
+      }
+    ],
+    "huella": "e7e6a78383e7e3e0"
+  },
+  {
+    "id": "nv-t3",
+    "sku": "NV-T3",
+    "slug": "topos-royal-cristal-6-mm",
+    "nombre": "Topos Royal Cristal 6 mm",
+    "categoria": "topos",
+    "precio": 80000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-royal-cristal-6-mm.webp",
+        "mini": "img/nv/topos-royal-cristal-6-mm-m.webp"
+      }
+    ],
+    "huella": "78cb3a679970e324"
+  },
+  {
+    "id": "nv-t4",
+    "sku": "NV-T4",
+    "slug": "topos-milagrosa-redonda-8-mm",
+    "nombre": "Topos Milagrosa Redonda 8 mm",
+    "categoria": "topos",
+    "precio": 80000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-milagrosa-redonda-8-mm.webp",
+        "mini": "img/nv/topos-milagrosa-redonda-8-mm-m.webp"
+      }
+    ],
+    "huella": "030101596ca11c31"
+  },
+  {
+    "id": "nv-t5",
+    "sku": "NV-T5",
+    "slug": "topos-ancla-8-mm",
+    "nombre": "Topos Ancla 8 mm",
+    "categoria": "topos",
+    "precio": 70000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-ancla-8-mm.webp",
+        "mini": "img/nv/topos-ancla-8-mm-m.webp"
+      }
+    ],
+    "huella": "0f1b630b29696107"
+  },
+  {
+    "id": "nv-t6",
+    "sku": "NV-T6",
+    "slug": "topos-balin-4-mm",
+    "nombre": "Topos Balín 4 mm",
+    "categoria": "topos",
+    "precio": 70000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-balin-4-mm.webp",
+        "mini": "img/nv/topos-balin-4-mm-m.webp"
+      }
+    ],
+    "huella": "4bc9840649816171"
+  },
+  {
+    "id": "nv-t7",
+    "sku": "NV-T7",
+    "slug": "topos-avion-8-mm",
+    "nombre": "Topos Avión 8 mm",
+    "categoria": "topos",
+    "precio": 65000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-avion-8-mm.webp",
+        "mini": "img/nv/topos-avion-8-mm-m.webp"
+      }
+    ],
+    "huella": "1c59a39489050271"
+  },
+  {
+    "id": "nv-t8",
+    "sku": "NV-T8",
+    "slug": "topos-circon-redondo-verde-4-mm",
+    "nombre": "Topos Circón Redondo Verde 4 mm",
+    "categoria": "topos",
+    "precio": 70000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-circon-redondo-verde-4-mm.webp",
+        "mini": "img/nv/topos-circon-redondo-verde-4-mm-m.webp"
+      }
+    ],
+    "huella": "103858180a950903"
+  },
+  {
+    "id": "nv-t9",
+    "sku": "NV-T9",
+    "slug": "topos-estrella-stars",
+    "nombre": "Topos Estrella Stars",
+    "categoria": "topos",
+    "precio": 70000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-estrella-stars.webp",
+        "mini": "img/nv/topos-estrella-stars-m.webp"
+      }
+    ],
+    "huella": "96a484849595c367"
+  },
+  {
+    "id": "nv-t10",
+    "sku": "NV-T10",
+    "slug": "topos-gota-glam",
+    "nombre": "Topos Gota Glam",
+    "categoria": "topos",
+    "precio": 70000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-gota-glam.webp",
+        "mini": "img/nv/topos-gota-glam-m.webp"
+      }
+    ],
+    "huella": "cd4f93142129690b"
+  },
+  {
+    "id": "nv-t11",
+    "sku": "NV-T11",
+    "slug": "topos-dynasty-cristal",
+    "nombre": "Topos Dynasty Cristal",
+    "categoria": "topos",
+    "precio": 80000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-dynasty-cristal.webp",
+        "mini": "img/nv/topos-dynasty-cristal-m.webp"
+      }
+    ],
+    "huella": "8188898181e080c8"
+  },
+  {
+    "id": "nv-t12",
+    "sku": "NV-T12",
+    "slug": "topos-avion-cristal",
+    "nombre": "Topos Avión Cristal",
+    "categoria": "topos",
+    "precio": 80000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-avion-cristal.webp",
+        "mini": "img/nv/topos-avion-cristal-m.webp"
+      }
+    ],
+    "huella": "e8e64f9369e3e1b2"
+  },
+  {
+    "id": "nv-t13",
+    "sku": "NV-T13",
+    "slug": "topos-trebol-cristal",
+    "nombre": "Topos Trébol Cristal",
+    "categoria": "topos",
+    "precio": 80000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-trebol-cristal.webp",
+        "mini": "img/nv/topos-trebol-cristal-m.webp"
+      }
+    ],
+    "huella": "62489d1d66ce976c"
+  },
+  {
+    "id": "nv-t14",
+    "sku": "NV-T14",
+    "slug": "topos-espiritu-santo",
+    "nombre": "Topos Espíritu Santo",
+    "categoria": "topos",
+    "precio": 70000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-espiritu-santo.webp",
+        "mini": "img/nv/topos-espiritu-santo-m.webp"
+      }
+    ],
+    "huella": "e2ebdb9a862e3c7c"
+  },
+  {
+    "id": "nv-tr1",
+    "sku": "NV-TR1",
+    "slug": "topos-corazon",
+    "nombre": "Topos Corazón",
+    "categoria": "topos",
+    "sub": "rosca",
+    "precio": 85000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-corazon.webp",
+        "mini": "img/nv/topos-corazon-m.webp"
+      }
+    ],
+    "huella": "1c618e27d971f24c"
+  },
+  {
+    "id": "nv-tr2",
+    "sku": "NV-TR2",
+    "slug": "topos-coronita",
+    "nombre": "Topos Coronita",
+    "categoria": "topos",
+    "sub": "rosca",
+    "precio": 80000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-coronita.webp",
+        "mini": "img/nv/topos-coronita-m.webp"
+      }
+    ],
+    "huella": "6cc51f639970b166"
+  },
+  {
+    "id": "nv-tr3",
+    "sku": "NV-TR3",
+    "slug": "topos-guadalupe",
+    "nombre": "Topos Guadalupe",
+    "categoria": "topos",
+    "sub": "rosca",
+    "precio": 135000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-guadalupe.webp",
+        "mini": "img/nv/topos-guadalupe-m.webp"
+      }
+    ],
+    "huella": "0f09793c61231903"
+  },
+  {
+    "id": "nv-tr4",
+    "sku": "NV-TR4",
+    "slug": "topos-san-benito",
+    "nombre": "Topos San Benito",
+    "categoria": "topos",
+    "sub": "rosca",
+    "precio": 110000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-san-benito.webp",
+        "mini": "img/nv/topos-san-benito-m.webp"
+      }
+    ],
+    "huella": "0e071918a0613103"
+  },
+  {
+    "id": "nv-tr5",
+    "sku": "NV-TR5",
+    "slug": "topos-gucci",
+    "nombre": "Topos Gucci",
+    "categoria": "topos",
+    "sub": "rosca",
+    "precio": 130000,
+    "fotos": [
+      {
+        "src": "img/nv/topos-gucci.webp",
+        "mini": "img/nv/topos-gucci-m.webp"
+      }
+    ],
+    "huella": "2c2cacacac2c1a18"
+  },
+  {
+    "id": "nv-c1",
+    "sku": "NV-C1",
+    "slug": "candonga-tren",
+    "nombre": "Candonga Tren",
+    "categoria": "candongas",
+    "precio": 80000,
+    "fotos": [
+      {
+        "src": "img/nv/candonga-tren.webp",
+        "mini": "img/nv/candonga-tren-m.webp"
+      }
+    ],
+    "huella": "1c1ac0c8b0a1c2c2"
+  },
+  {
+    "id": "nv-c2",
+    "sku": "NV-C2",
+    "slug": "candonga-trazo",
+    "nombre": "Candonga Trazo",
+    "categoria": "candongas",
+    "precio": 75000,
+    "fotos": [
+      {
+        "src": "img/nv/candonga-trazo.webp",
+        "mini": "img/nv/candonga-trazo-m.webp"
+      }
+    ],
+    "huella": "e0eccc8686c6c1cf"
+  },
+  {
+    "id": "nv-c3",
+    "sku": "NV-C3",
+    "slug": "candonga-clasic-link",
+    "nombre": "Candonga Clasic Link",
+    "categoria": "candongas",
+    "precio": 90000,
+    "fotos": [
+      {
+        "src": "img/nv/candonga-clasic-link.webp",
+        "mini": "img/nv/candonga-clasic-link-m.webp"
+      }
+    ],
+    "huella": "cccc8c87c5c7cb94"
+  },
+  {
+    "id": "nv-c4",
+    "sku": "NV-C4",
+    "slug": "candonga-facet",
+    "nombre": "Candonga Facet",
+    "categoria": "candongas",
+    "precio": 65000,
+    "fotos": [
+      {
+        "src": "img/nv/candonga-facet.webp",
+        "mini": "img/nv/candonga-facet-m.webp"
+      }
+    ],
+    "huella": "f9fe18f89cb2c811"
+  },
+  {
+    "id": "nv-c5",
+    "sku": "NV-C5",
+    "slug": "candonga-hills-g",
+    "nombre": "Candonga Hills G",
+    "categoria": "candongas",
+    "precio": 85000,
+    "fotos": [
+      {
+        "src": "img/nv/candonga-hills-g.webp",
+        "mini": "img/nv/candonga-hills-g-m.webp"
+      }
+    ],
+    "nota": "Precio corregido: estaba en $850.000 (las demás candongas valen $65.000–$90.000 y el proveedor la vende en $80.000)",
+    "huella": "ce87191035194b4f"
+  },
+  {
+    "id": "nv-c6",
+    "sku": "NV-C6",
+    "slug": "candonga-solitario-cristal",
+    "nombre": "Candonga Solitario Cristal",
+    "categoria": "candongas",
+    "precio": 75000,
+    "fotos": [
+      {
+        "src": "img/nv/candonga-solitario-cristal.webp",
+        "mini": "img/nv/candonga-solitario-cristal-m.webp"
+      }
+    ],
+    "huella": "f9f078a4a48cccc8"
+  },
+  {
+    "id": "nv-c7",
+    "sku": "NV-C7",
+    "slug": "candonga-halo-cristal",
+    "nombre": "Candonga Halo Cristal",
+    "categoria": "candongas",
+    "precio": 80000,
+    "fotos": [
+      {
+        "src": "img/nv/candonga-halo-cristal.webp",
+        "mini": "img/nv/candonga-halo-cristal-m.webp"
+      }
+    ],
+    "huella": "6b2fdad86cf434ba"
+  },
+  {
+    "id": "nv-ca1",
+    "sku": "NV-CA1",
+    "slug": "cadena-cubanita-45-cm",
+    "nombre": "Cadena Cubanita 45 cm",
+    "categoria": "cadenas",
+    "sub": "45",
+    "precio": 115000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-cubanita-45-cm.webp",
+        "mini": "img/nv/cadena-cubanita-45-cm-m.webp"
+      }
+    ],
+    "huella": "0284e120dae9308c"
+  },
+  {
+    "id": "nv-ca2",
+    "sku": "NV-CA2",
+    "slug": "cadena-cubana-love-45-cm",
+    "nombre": "Cadena Cubana Love 45 cm",
+    "categoria": "cadenas",
+    "sub": "45",
+    "precio": 140000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-cubana-love-45-cm.webp",
+        "mini": "img/nv/cadena-cubana-love-45-cm-m.webp"
+      }
+    ],
+    "huella": "a00024d069340a05"
+  },
+  {
+    "id": "nv-ca3",
+    "sku": "NV-CA3",
+    "slug": "cadena-singapur-45-cm",
+    "nombre": "Cadena Singapur 45 cm",
+    "categoria": "cadenas",
+    "sub": "45",
+    "precio": 140000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-singapur-45-cm.webp",
+        "mini": "img/nv/cadena-singapur-45-cm-m.webp"
+      }
+    ],
+    "huella": "0c0e060706d3c607"
+  },
+  {
+    "id": "nv-ca4",
+    "sku": "NV-CA4",
+    "slug": "cadena-espejo-45-cm",
+    "nombre": "Cadena Espejo 45 cm",
+    "categoria": "cadenas",
+    "sub": "45",
+    "precio": 140000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-espejo-45-cm.webp",
+        "mini": "img/nv/cadena-espejo-45-cm-m.webp"
+      }
+    ],
+    "huella": "8a1832492c96ca61"
+  },
+  {
+    "id": "nv-ca5",
+    "sku": "NV-CA5",
+    "slug": "cadena-balin-aros-45-cm",
+    "nombre": "Cadena Balín Aros 45 cm",
+    "categoria": "cadenas",
+    "sub": "45",
+    "precio": 180000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-balin-aros-45-cm.webp",
+        "mini": "img/nv/cadena-balin-aros-45-cm-m.webp"
+      }
+    ],
+    "huella": "10103020880c0446"
+  },
+  {
+    "id": "nv-ca6",
+    "sku": "NV-CA6",
+    "slug": "cadena-gucci-45-cm",
+    "nombre": "Cadena Gucci 45 cm",
+    "categoria": "cadenas",
+    "sub": "45",
+    "precio": 250000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-gucci-45-cm.webp",
+        "mini": "img/nv/cadena-gucci-45-cm-m.webp"
+      }
+    ],
+    "huella": "f1d8ded6436367e5"
+  },
+  {
+    "id": "nv-ca7",
+    "sku": "NV-CA7",
+    "slug": "cadena-barril-3-oros-45-cm",
+    "nombre": "Cadena Barril 3 Oros 45 cm",
+    "categoria": "cadenas",
+    "sub": "45",
+    "precio": 320000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-barril-3-oros-45-cm.webp",
+        "mini": "img/nv/cadena-barril-3-oros-45-cm-m.webp"
+      }
+    ],
+    "huella": "c0a0606060d0d1e3"
+  },
+  {
+    "id": "nv-ca8",
+    "sku": "NV-CA8",
+    "slug": "cadena-grumetta-45-cm",
+    "nombre": "Cadena Grumetta 45 cm",
+    "categoria": "cadenas",
+    "sub": "45",
+    "precio": 130000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-grumetta-45-cm.webp",
+        "mini": "img/nv/cadena-grumetta-45-cm-m.webp"
+      }
+    ],
+    "huella": "124e860606030dc4"
+  },
+  {
+    "id": "nv-ca9",
+    "sku": "NV-CA9",
+    "slug": "cadena-singapur-65-cm",
+    "nombre": "Cadena Singapur 65 cm",
+    "categoria": "cadenas",
+    "sub": "65",
+    "precio": 270000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-singapur-65-cm.webp",
+        "mini": "img/nv/cadena-singapur-65-cm-m.webp"
+      }
+    ],
+    "huella": "da7222b2d6e9f465"
+  },
+  {
+    "id": "nv-ca10",
+    "sku": "NV-CA10",
+    "slug": "cadena-tejido-chino-3-mm-65-cm",
+    "nombre": "Cadena Tejido Chino 3 mm 65 cm",
+    "categoria": "cadenas",
+    "sub": "65",
+    "precio": 300000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-tejido-chino-3-mm-65-cm.webp",
+        "mini": "img/nv/cadena-tejido-chino-3-mm-65-cm-m.webp"
+      }
+    ],
+    "huella": "edfbffaf69dab66f"
+  },
+  {
+    "id": "nv-ca11",
+    "sku": "NV-CA11",
+    "slug": "cadena-barril-3-oros-65-cm",
+    "nombre": "Cadena Barril 3 Oros 65 cm",
+    "categoria": "cadenas",
+    "sub": "65",
+    "precio": 400000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-barril-3-oros-65-cm.webp",
+        "mini": "img/nv/cadena-barril-3-oros-65-cm-m.webp"
+      }
+    ],
+    "huella": "c4c1f1a4a9a89899"
+  },
+  {
+    "id": "nv-ca12",
+    "sku": "NV-CA12",
+    "slug": "cadena-marine-delgada",
+    "nombre": "Cadena Marine Delgada",
+    "categoria": "cadenas",
+    "precio": 170000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-marine-delgada.webp",
+        "mini": "img/nv/cadena-marine-delgada-m.webp"
+      }
+    ],
+    "huella": "21171f150d0b170f"
+  },
+  {
+    "id": "nv-ca13",
+    "sku": "NV-CA13",
+    "slug": "cadena-china-2-mm-65-cm",
+    "nombre": "Cadena China 2 mm 65 cm",
+    "categoria": "cadenas",
+    "sub": "65",
+    "precio": 300000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-china-2-mm-65-cm.webp",
+        "mini": "img/nv/cadena-china-2-mm-65-cm-m.webp"
+      }
+    ],
+    "huella": "0200010000040404"
+  },
+  {
+    "id": "nv-ca14",
+    "sku": "NV-CA14",
+    "slug": "cadena-arrow-65-cm",
+    "nombre": "Cadena Arrow 65 cm",
+    "categoria": "cadenas",
+    "sub": "65",
+    "precio": 330000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-arrow-65-cm.webp",
+        "mini": "img/nv/cadena-arrow-65-cm-m.webp"
+      }
+    ],
+    "huella": "8b633b1c1f9ff070"
+  },
+  {
+    "id": "nv-ca15",
+    "sku": "NV-CA15",
+    "slug": "cadena-lazo-3-mm-65-cm",
+    "nombre": "Cadena Lazo 3 mm 65 cm",
+    "categoria": "cadenas",
+    "sub": "65",
+    "precio": 450000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-lazo-3-mm-65-cm.webp",
+        "mini": "img/nv/cadena-lazo-3-mm-65-cm-m.webp"
+      }
+    ],
+    "huella": "63e28a86cb0b2533"
+  },
+  {
+    "id": "nv-ca16",
+    "sku": "NV-CA16",
+    "slug": "cadena-aros-3-mm-65-cm",
+    "nombre": "Cadena Aros 3 mm 65 cm",
+    "categoria": "cadenas",
+    "sub": "65",
+    "precio": 250000,
+    "fotos": [
+      {
+        "src": "img/nv/cadena-aros-3-mm-65-cm.webp",
+        "mini": "img/nv/cadena-aros-3-mm-65-cm-m.webp"
+      }
+    ],
+    "huella": "da2773d33b373ef4"
+  },
+  {
+    "id": "nv-p1",
+    "sku": "NV-P1",
+    "slug": "pulsera-destello",
+    "nombre": "Pulsera Destello",
+    "categoria": "pulseras",
+    "precio": 110000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-destello.webp",
+        "mini": "img/nv/pulsera-destello-m.webp"
+      }
+    ],
+    "huella": "42e0c01010cc58b8"
+  },
+  {
+    "id": "nv-p2",
+    "sku": "NV-P2",
+    "slug": "pulsera-tejido-chino-3-mm-20-cm",
+    "nombre": "Pulsera Tejido Chino 3 mm 20 cm",
+    "categoria": "pulseras",
+    "precio": 160000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-tejido-chino-3-mm-20-cm.webp",
+        "mini": "img/nv/pulsera-tejido-chino-3-mm-20-cm-m.webp"
+      }
+    ],
+    "huella": "070b13264c9ab3e1"
+  },
+  {
+    "id": "nv-p3",
+    "sku": "NV-P3",
+    "slug": "pulsera-diamantada",
+    "nombre": "Pulsera Diamantada",
+    "categoria": "pulseras",
+    "precio": 100000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-diamantada.webp",
+        "mini": "img/nv/pulsera-diamantada-m.webp"
+      }
+    ],
+    "huella": "4f1d3b7b332ff9e1"
+  },
+  {
+    "id": "nv-p4",
+    "sku": "NV-P4",
+    "slug": "pulsera-mini-clover",
+    "nombre": "Pulsera Mini Clover",
+    "categoria": "pulseras",
+    "precio": 200000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-mini-clover.webp",
+        "mini": "img/nv/pulsera-mini-clover-m.webp"
+      }
+    ],
+    "huella": "4489313352c6cdd9"
+  },
+  {
+    "id": "nv-p5",
+    "sku": "NV-P5",
+    "slug": "pulsera-aros",
+    "nombre": "Pulsera Aros",
+    "categoria": "pulseras",
+    "precio": 70000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-aros.webp",
+        "mini": "img/nv/pulsera-aros-m.webp"
+      }
+    ],
+    "huella": "d6a4c8f0309980e0"
+  },
+  {
+    "id": "nv-p6",
+    "sku": "NV-P6",
+    "slug": "pulsera-cubana-19-cm",
+    "nombre": "Pulsera Cubana 19 cm",
+    "categoria": "pulseras",
+    "precio": 160000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-cubana-19-cm.webp",
+        "mini": "img/nv/pulsera-cubana-19-cm-m.webp"
+      }
+    ],
+    "huella": "e3c8c0e4c4e2e270"
+  },
+  {
+    "id": "nv-p7",
+    "sku": "NV-P7",
+    "slug": "pulsera-militar-18-cm",
+    "nombre": "Pulsera Militar 18 cm",
+    "categoria": "pulseras",
+    "precio": 80000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-militar-18-cm.webp",
+        "mini": "img/nv/pulsera-militar-18-cm-m.webp"
+      }
+    ],
+    "huella": "a7b7981cc76793f9"
+  },
+  {
+    "id": "nv-p8",
+    "sku": "NV-P8",
+    "slug": "pulsera-cubanita-18-5-cm",
+    "nombre": "Pulsera Cubanita 18,5 cm",
+    "categoria": "pulseras",
+    "precio": 100000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-cubanita-18-5-cm.webp",
+        "mini": "img/nv/pulsera-cubanita-18-5-cm-m.webp"
+      }
+    ],
+    "huella": "7a30363438290992"
+  },
+  {
+    "id": "nv-p9",
+    "sku": "NV-P9",
+    "slug": "pulsera-lazito-19-5-cm",
+    "nombre": "Pulsera Lazito 19,5 cm",
+    "categoria": "pulseras",
+    "precio": 150000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-lazito-19-5-cm.webp",
+        "mini": "img/nv/pulsera-lazito-19-5-cm-m.webp"
+      }
+    ],
+    "huella": "799d010707480106"
+  },
+  {
+    "id": "nv-p10",
+    "sku": "NV-P10",
+    "slug": "pulsera-lazo-3-mm-18-5-cm",
+    "nombre": "Pulsera Lazo 3 mm 18,5 cm",
+    "categoria": "pulseras",
+    "precio": 280000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-lazo-3-mm-18-5-cm.webp",
+        "mini": "img/nv/pulsera-lazo-3-mm-18-5-cm-m.webp"
+      }
+    ],
+    "huella": "37e18ca69bc6741b"
+  },
+  {
+    "id": "nv-p11",
+    "sku": "NV-P11",
+    "slug": "pulsera-balin-italiana-n-8",
+    "nombre": "Pulsera Balín Italiana Nº 8",
+    "categoria": "pulseras",
+    "precio": 270000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-balin-italiana-n-8.webp",
+        "mini": "img/nv/pulsera-balin-italiana-n-8-m.webp"
+      }
+    ],
+    "huella": "632593f4deea6817"
+  },
+  {
+    "id": "nv-p12",
+    "sku": "NV-P12",
+    "slug": "pulsera-san-miguel-arcangel-premium",
+    "nombre": "Pulsera San Miguel Arcángel Premium",
+    "categoria": "pulseras",
+    "precio": 1030000,
+    "descripcion": "Racimos de balines dorados tallados con dije de San Miguel Arcángel, de alas cubiertas de circones blancos y banda con su nombre. Una pieza de inspiración religiosa llena de brillo. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-san-miguel-arcangel-premium.webp",
+        "mini": "img/nv/pulsera-san-miguel-arcangel-premium-m.webp"
+      }
+    ],
+    "huella": "1971b1c464182b07"
+  },
+  {
+    "id": "nv-p13",
+    "sku": "NV-P13",
+    "slug": "pulsera-esferas-negras-estriadas",
+    "nombre": "Pulsera Esferas Negras Estriadas",
+    "categoria": "pulseras",
+    "precio": 140000,
+    "descripcion": "Esferas negras mate de textura estriada, algunas con franja dorada, combinadas con balines tallados y un balín liso central. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hombre"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-esferas-negras-estriadas.webp",
+        "mini": "img/nv/pulsera-esferas-negras-estriadas-m.webp"
+      }
+    ],
+    "huella": "58334d84b6dc5990"
+  },
+  {
+    "id": "nv-p14",
+    "sku": "NV-P14",
+    "slug": "pulsera-san-benito-anudada",
+    "nombre": "Pulsera San Benito Anudada",
+    "categoria": "pulseras",
+    "precio": 250000,
+    "descripcion": "Medalla de San Benito con balines dorados tallados separados por nudos de hilo. En la foto se muestra en versión de hilo negro y de hilo rojo. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-san-benito-anudada.webp",
+        "mini": "img/nv/pulsera-san-benito-anudada-m.webp"
+      }
+    ],
+    "huella": "1c38f0c65e180907"
+  },
+  {
+    "id": "nv-p15",
+    "sku": "NV-P15",
+    "slug": "pulsera-infantil-hilo-neon",
+    "nombre": "Pulsera Infantil Hilo Neón",
+    "categoria": "pulseras",
+    "precio": 110000,
+    "descripcion": "Delicado hilo multicolor en tonos neón rosa, amarillo, verde y naranja con pequeños balines dorados tallados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "niño"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-infantil-hilo-neon.webp",
+        "mini": "img/nv/pulsera-infantil-hilo-neon-m.webp"
+      }
+    ],
+    "huella": "0280c0e060603018"
+  },
+  {
+    "id": "nv-p16",
+    "sku": "NV-P16",
+    "slug": "pulsera-san-benito",
+    "nombre": "Pulsera San Benito",
+    "categoria": "pulseras",
+    "precio": 150000,
+    "descripcion": "Tejido macramé color vinotinto con balines dorados lisos y medalla central de San Benito. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-san-benito.webp",
+        "mini": "img/nv/pulsera-san-benito-m.webp"
+      }
+    ],
+    "huella": "e76937b86c701a83"
+  },
+  {
+    "id": "nv-p17",
+    "sku": "NV-P17",
+    "slug": "pulsera-bicolor-negro-y-beige",
+    "nombre": "Pulsera Bicolor Negro y Beige",
+    "categoria": "pulseras",
+    "precio": 100000,
+    "descripcion": "Fino tejido bicolor en negro y beige con cinco balines dorados tallados al centro. Un diseño discreto y elegante. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-bicolor-negro-y-beige.webp",
+        "mini": "img/nv/pulsera-bicolor-negro-y-beige-m.webp"
+      }
+    ],
+    "huella": "1e3263c1c4382100"
+  },
+  {
+    "id": "nv-p18",
+    "sku": "NV-P18",
+    "slug": "pulsera-mix-de-balines",
+    "nombre": "Pulsera Mix de Balines",
+    "categoria": "pulseras",
+    "precio": 450000,
+    "descripcion": "Combinación de balines dorados estriados, tallados, escarchados y lisos, con acentos en oro rosa. Cordón negro con nudo corredizo y un pequeño dije de trébol en el extremo. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-mix-de-balines.webp",
+        "mini": "img/nv/pulsera-mix-de-balines-m.webp"
+      }
+    ],
+    "huella": "73277922a3a3d63c"
+  },
+  {
+    "id": "nv-p19",
+    "sku": "NV-P19",
+    "slug": "pulsera-san-benito-circones-verdes",
+    "nombre": "Pulsera San Benito Circones Verdes",
+    "categoria": "pulseras",
+    "precio": 245000,
+    "descripcion": "Medalla de San Benito con balines dorados estriados y lisos y separadores con circones verdes. En la foto se muestra en versión de hilo rojo y de hilo negro. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-san-benito-circones-verdes.webp",
+        "mini": "img/nv/pulsera-san-benito-circones-verdes-m.webp"
+      }
+    ],
+    "huella": "107179ccccceeabe"
+  },
+  {
+    "id": "nv-p20",
+    "sku": "NV-P20",
+    "slug": "pulsera-cuentas-franja-dorada",
+    "nombre": "Pulsera Cuentas Franja Dorada",
+    "categoria": "pulseras",
+    "precio": 250000,
+    "descripcion": "Balines dorados lisos y tallados combinados con cuentas mate de franja dorada. En la foto se muestra en versión negra y roja, con cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-cuentas-franja-dorada.webp",
+        "mini": "img/nv/pulsera-cuentas-franja-dorada-m.webp"
+      }
+    ],
+    "huella": "0cc141e09af2370f"
+  },
+  {
+    "id": "nv-p21",
+    "sku": "NV-P21",
+    "slug": "pulsera-placa-dios-tres-oros",
+    "nombre": "Pulsera Placa Dios Tres Oros",
+    "categoria": "pulseras",
+    "precio": 130000,
+    "descripcion": "Placa dorada calada con la palabra DIOS entre balines en tres tonos de oro: amarillo, rosa y blanco. En la foto se muestra en hilo beige y en hilo verde oscuro. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-placa-dios-tres-oros.webp",
+        "mini": "img/nv/pulsera-placa-dios-tres-oros-m.webp"
+      }
+    ],
+    "huella": "2666e3c0880c0c13"
+  },
+  {
+    "id": "nv-p22",
+    "sku": "NV-P22",
+    "slug": "pulsera-virgen-milagrosa-tejido-rojo",
+    "nombre": "Pulsera Virgen Milagrosa Tejido Rojo",
+    "categoria": "pulseras",
+    "precio": 220000,
+    "descripcion": "Tejido macramé rojo con medalla ovalada de la Virgen Milagrosa, balines dorados tallados y separadores con circones blancos. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-virgen-milagrosa-tejido-rojo.webp",
+        "mini": "img/nv/pulsera-virgen-milagrosa-tejido-rojo-m.webp"
+      }
+    ],
+    "huella": "f9fc62cc8b960e0f"
+  },
+  {
+    "id": "nv-p23",
+    "sku": "NV-P23",
+    "slug": "pulsera-corona-tres-oros",
+    "nombre": "Pulsera Corona Tres Oros",
+    "categoria": "pulseras",
+    "precio": 180000,
+    "descripcion": "Tejido negro con medallón redondo de corona, balines en tres tonos de oro y separadores con circones verdes. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-corona-tres-oros.webp",
+        "mini": "img/nv/pulsera-corona-tres-oros-m.webp"
+      }
+    ],
+    "huella": "38ec48ccb2864c0f"
+  },
+  {
+    "id": "nv-p24",
+    "sku": "NV-P24",
+    "slug": "pulsera-trebol-cuentas-rosa-palo",
+    "nombre": "Pulsera Trébol Cuentas Rosa Palo",
+    "categoria": "pulseras",
+    "precio": 120000,
+    "descripcion": "Tejido color camel con dije de trébol dorado en relieve, borde perlado y circón central, balines lisos y cuentas mate rosa palo. En la foto, dos piezas del mismo diseño. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-trebol-cuentas-rosa-palo.webp",
+        "mini": "img/nv/pulsera-trebol-cuentas-rosa-palo-m.webp"
+      }
+    ],
+    "huella": "49c9d8696cdcd0f9"
+  },
+  {
+    "id": "nv-p25",
+    "sku": "NV-P25",
+    "slug": "pulsera-lisa-o-diamantada",
+    "nombre": "Pulsera Lisa o Diamantada",
+    "categoria": "pulseras",
+    "precio": 270000,
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-lisa-o-diamantada.webp",
+        "mini": "img/nv/pulsera-lisa-o-diamantada-m.webp"
+      }
+    ],
+    "huella": "0509dccac6e0b113"
+  },
+  {
+    "id": "nv-p26",
+    "sku": "NV-P26",
+    "slug": "pulsera-balin-6-doble",
+    "nombre": "Pulsera Balín 6 Doble",
+    "categoria": "pulseras",
+    "precio": 420000,
+    "descripcion": "Hilera de balines dorados estriados sobre hilo rojo, con cierre de nudo corredizo ajustable. Un clásico vibrante y lleno de brillo. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-balin-6-doble.webp",
+        "mini": "img/nv/pulsera-balin-6-doble-m.webp"
+      }
+    ],
+    "huella": "2f2737f1dcce6031"
+  },
+  {
+    "id": "nv-p27",
+    "sku": "NV-P27",
+    "slug": "pulsera-guadalupe-cuentas-lila",
+    "nombre": "Pulsera Guadalupe Cuentas Lila",
+    "categoria": "pulseras",
+    "precio": 300000,
+    "descripcion": "Cuentas mate color lila alternadas con balines dorados tallados y separadores de circones blancos, con dije de la Virgen de Guadalupe. Cordón lila con nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-guadalupe-cuentas-lila.webp",
+        "mini": "img/nv/pulsera-guadalupe-cuentas-lila-m.webp"
+      }
+    ],
+    "huella": "000c83b88ef6090f"
+  },
+  {
+    "id": "nv-p28",
+    "sku": "NV-P28",
+    "slug": "pulsera-corazon-liso-rosa-palo",
+    "nombre": "Pulsera Corazón Liso Rosa Palo",
+    "categoria": "pulseras",
+    "precio": 270000,
+    "descripcion": "Tejido en tono rosa palo con balines dorados tallados de dos tamaños y un dije colgante de corazón liso. Delicada y femenina. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-corazon-liso-rosa-palo.webp",
+        "mini": "img/nv/pulsera-corazon-liso-rosa-palo-m.webp"
+      }
+    ],
+    "huella": "9e6370e4c64e1f9e"
+  },
+  {
+    "id": "nv-p29",
+    "sku": "NV-P29",
+    "slug": "pulsera-trebol-circones-cuentas-mate",
+    "nombre": "Pulsera Trébol Circones Cuentas Mate",
+    "categoria": "pulseras",
+    "precio": 140000,
+    "descripcion": "Cuentas mate a juego con el hilo, balines dorados tallados y dije colgante de trébol cubierto de circones blancos. En la foto se muestra en lila, rosa y negro. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-trebol-circones-cuentas-mate.webp",
+        "mini": "img/nv/pulsera-trebol-circones-cuentas-mate-m.webp"
+      }
+    ],
+    "huella": "e8c492a4cc96c479"
+  },
+  {
+    "id": "nv-p30",
+    "sku": "NV-P30",
+    "slug": "pulsera-trebol-hilo-rojo",
+    "nombre": "Pulsera Trébol Hilo Rojo",
+    "categoria": "pulseras",
+    "precio": 280000,
+    "descripcion": "Hilo rojo tejido en doble hilera de balines dorados lisos y escarchados, con dije de trébol en relieve, borde perlado y circón central. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-trebol-hilo-rojo.webp",
+        "mini": "img/nv/pulsera-trebol-hilo-rojo-m.webp"
+      }
+    ],
+    "huella": "226343c0841c0606"
+  },
+  {
+    "id": "nv-p31",
+    "sku": "NV-P31",
+    "slug": "pulsera-balines-estriados-tejido-camel",
+    "nombre": "Pulsera Balines Estriados Tejido Camel",
+    "categoria": "pulseras",
+    "precio": 300000,
+    "descripcion": "Tejido macramé color camel con balines dorados estriados bordeados por pequeños balines lisos y un detalle cuadrado con circones. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-balines-estriados-tejido-camel.webp",
+        "mini": "img/nv/pulsera-balines-estriados-tejido-camel-m.webp"
+      }
+    ],
+    "huella": "c76766b1cce41907"
+  },
+  {
+    "id": "nv-p32",
+    "sku": "NV-P32",
+    "slug": "set-pulsera-y-anillo-herradura",
+    "nombre": "Set Pulsera y Anillo Herradura",
+    "categoria": "pulseras",
+    "precio": 350000,
+    "descripcion": "Conjunto en hilo negro entrelazado con pequeños tubos dorados y dije de herradura con cabeza de caballo; el anillo repite el mismo diseño. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "set",
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/set-pulsera-y-anillo-herradura.webp",
+        "mini": "img/nv/set-pulsera-y-anillo-herradura-m.webp"
+      }
+    ],
+    "huella": "bdf9f8faedd5d9f9"
+  },
+  {
+    "id": "nv-p33",
+    "sku": "NV-P33",
+    "slug": "set-pulsera-y-anillo-guadalupe",
+    "nombre": "Set Pulsera y Anillo Guadalupe",
+    "categoria": "pulseras",
+    "precio": 260000,
+    "descripcion": "Conjunto en tejido macramé rojo con balines dorados tallados y medalla ovalada de la Virgen de Guadalupe; el anillo repite el mismo diseño. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "set",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/set-pulsera-y-anillo-guadalupe.webp",
+        "mini": "img/nv/set-pulsera-y-anillo-guadalupe-m.webp"
+      }
+    ],
+    "huella": "88b8767e6155f9f3"
+  },
+  {
+    "id": "nv-p34",
+    "sku": "NV-P34",
+    "slug": "set-pulsera-y-anillo-corona",
+    "nombre": "Set Pulsera y Anillo Corona",
+    "categoria": "pulseras",
+    "precio": 360000,
+    "descripcion": "Conjunto en hilo negro con racimo de balines dorados lisos y medallón redondo de corona; el anillo repite el mismo diseño. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "set",
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/set-pulsera-y-anillo-corona.webp",
+        "mini": "img/nv/set-pulsera-y-anillo-corona-m.webp"
+      }
+    ],
+    "huella": "9c5264f4d9caecfc"
+  },
+  {
+    "id": "nv-p35",
+    "sku": "NV-P35",
+    "slug": "pulsera-doble-corazon-latido",
+    "nombre": "Pulsera Doble Corazón Latido",
+    "categoria": "pulseras",
+    "precio": 175000,
+    "descripcion": "Tejido rosado con balines dorados tallados y dije de dos corazones con línea de latido, uno calado y otro cubierto de circones blancos. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-doble-corazon-latido.webp",
+        "mini": "img/nv/pulsera-doble-corazon-latido-m.webp"
+      }
+    ],
+    "huella": "b9b8b0c8e629552f"
+  },
+  {
+    "id": "nv-p36",
+    "sku": "NV-P36",
+    "slug": "pulsera-tejida-trios-de-balines",
+    "nombre": "Pulsera Tejida Tríos de Balines",
+    "categoria": "pulseras",
+    "precio": 250000,
+    "descripcion": "Tramos de tejido negro alternados con grupos de tres balines dorados tallados. Cierre de nudo corredizo ajustable con terminales tejidos. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-tejida-trios-de-balines.webp",
+        "mini": "img/nv/pulsera-tejida-trios-de-balines-m.webp"
+      }
+    ],
+    "huella": "f1f0f0d8962e5a13"
+  },
+  {
+    "id": "nv-p37",
+    "sku": "NV-P37",
+    "slug": "pulsera-dije-geometrico-circones",
+    "nombre": "Pulsera Dije Geométrico Circones",
+    "categoria": "pulseras",
+    "precio": 170000,
+    "descripcion": "Tejido negro con dije geométrico facetado engastado con circones transparentes, flanqueado por balines dorados tallados y estriados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-dije-geometrico-circones.webp",
+        "mini": "img/nv/pulsera-dije-geometrico-circones-m.webp"
+      }
+    ],
+    "huella": "98f8ca062f8703e0"
+  },
+  {
+    "id": "nv-p38",
+    "sku": "NV-P38",
+    "slug": "pulsera-corona-oro-rosa",
+    "nombre": "Pulsera Corona Oro Rosa",
+    "categoria": "pulseras",
+    "precio": 320000,
+    "descripcion": "Cordón color camel con medallón redondo de corona y balines lisos en oro rosa alternados con balines dorados tallados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-corona-oro-rosa.webp",
+        "mini": "img/nv/pulsera-corona-oro-rosa-m.webp"
+      }
+    ],
+    "huella": "8fb8bcb3cd7d0f0f"
+  },
+  {
+    "id": "nv-p39",
+    "sku": "NV-P39",
+    "slug": "pulsera-trebol-circones-tejido-negro",
+    "nombre": "Pulsera Trébol Circones Tejido Negro",
+    "categoria": "pulseras",
+    "precio": 80000,
+    "descripcion": "Tejido negro con dije de trébol cubierto de circones blancos entre dos balines dorados tallados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-trebol-circones-tejido-negro.webp",
+        "mini": "img/nv/pulsera-trebol-circones-tejido-negro-m.webp"
+      }
+    ],
+    "huella": "d1f2c2e89f8a0f0f"
+  },
+  {
+    "id": "nv-p40",
+    "sku": "NV-P40",
+    "slug": "pulsera-infinito-hilo-rojo",
+    "nombre": "Pulsera Infinito Hilo Rojo",
+    "categoria": "pulseras",
+    "precio": 160000,
+    "descripcion": "Tejido rojo en espiral con dije de infinito cubierto de circones blancos y balines dorados tallados a cada lado. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-infinito-hilo-rojo.webp",
+        "mini": "img/nv/pulsera-infinito-hilo-rojo-m.webp"
+      }
+    ],
+    "huella": "7b6fadde8f9fcf63"
+  },
+  {
+    "id": "nv-p41",
+    "sku": "NV-P41",
+    "slug": "pulsera-virgen-milagrosa-oro-rosa",
+    "nombre": "Pulsera Virgen Milagrosa Oro Rosa",
+    "categoria": "pulseras",
+    "precio": 160000,
+    "descripcion": "Tejido negro con medalla redonda de la Virgen Milagrosa, balines dorados tallados y acentos de balines en oro rosa. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-virgen-milagrosa-oro-rosa.webp",
+        "mini": "img/nv/pulsera-virgen-milagrosa-oro-rosa-m.webp"
+      }
+    ],
+    "huella": "a67b7da79cf4390f"
+  },
+  {
+    "id": "nv-p42",
+    "sku": "NV-P42",
+    "slug": "pulsera-virgen-milagrosa-tres-oros",
+    "nombre": "Pulsera Virgen Milagrosa Tres Oros",
+    "categoria": "pulseras",
+    "precio": 200000,
+    "descripcion": "Hilo negro con medalla ovalada de la Virgen Milagrosa, balines lisos en tres tonos de oro y separadores con circones. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-virgen-milagrosa-tres-oros.webp",
+        "mini": "img/nv/pulsera-virgen-milagrosa-tres-oros-m.webp"
+      }
+    ],
+    "huella": "15c67bf75d651f0f"
+  },
+  {
+    "id": "nv-p43",
+    "sku": "NV-P43",
+    "slug": "pulsera-guadalupe-espiral-bicolor",
+    "nombre": "Pulsera Guadalupe Espiral Bicolor",
+    "categoria": "pulseras",
+    "precio": 115000,
+    "descripcion": "Tejido en espiral bicolor negro y camel con dije de la Virgen de Guadalupe. Cierre de nudo corredizo ajustable en hilo negro. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-guadalupe-espiral-bicolor.webp",
+        "mini": "img/nv/pulsera-guadalupe-espiral-bicolor-m.webp"
+      }
+    ],
+    "huella": "012018c8c575070f"
+  },
+  {
+    "id": "nv-p44",
+    "sku": "NV-P44",
+    "slug": "pulsera-virgen-rosa-mistica",
+    "nombre": "Pulsera Virgen Rosa Mística",
+    "categoria": "pulseras",
+    "precio": 180000,
+    "descripcion": "Tejido rojo con medalla ovalada de la Virgen Rosa Mística y balines dorados tallados a cada lado. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-virgen-rosa-mistica.webp",
+        "mini": "img/nv/pulsera-virgen-rosa-mistica-m.webp"
+      }
+    ],
+    "huella": "12028345241d3153"
+  },
+  {
+    "id": "nv-p45",
+    "sku": "NV-P45",
+    "slug": "pulsera-tejida-doble-hilera",
+    "nombre": "Pulsera Tejida Doble Hilera",
+    "categoria": "pulseras",
+    "precio": 330000,
+    "descripcion": "Banda tejida en hilo negro con doble hilera continua de balines dorados tallados. Un diseño sobrio de estilo masculino. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hombre"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-tejida-doble-hilera.webp",
+        "mini": "img/nv/pulsera-tejida-doble-hilera-m.webp"
+      }
+    ],
+    "huella": "7c414703f7fe6e47"
+  },
+  {
+    "id": "nv-p46",
+    "sku": "NV-P46",
+    "slug": "pulsera-doble-hilera-oro-rosa",
+    "nombre": "Pulsera Doble Hilera Oro Rosa",
+    "categoria": "pulseras",
+    "precio": 385000,
+    "descripcion": "Tejido negro con doble hilera continua de balines tallados en tono oro rosa y terminales a juego. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-doble-hilera-oro-rosa.webp",
+        "mini": "img/nv/pulsera-doble-hilera-oro-rosa-m.webp"
+      }
+    ],
+    "huella": "1f1a72e310180904"
+  },
+  {
+    "id": "nv-p47",
+    "sku": "NV-P47",
+    "slug": "pulsera-flor-cuatro-petalos",
+    "nombre": "Pulsera Flor Cuatro Pétalos",
+    "categoria": "pulseras",
+    "precio": 285000,
+    "descripcion": "Cordón color camel con balines dorados lisos y tallados y dije de flor de cuatro pétalos en relieve, con borde perlado y circón central. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-flor-cuatro-petalos.webp",
+        "mini": "img/nv/pulsera-flor-cuatro-petalos-m.webp"
+      }
+    ],
+    "huella": "e7e737938c7c1b07"
+  },
+  {
+    "id": "nv-p48",
+    "sku": "NV-P48",
+    "slug": "pulsera-corona-trenzada-negra",
+    "nombre": "Pulsera Corona Trenzada Negra",
+    "categoria": "pulseras",
+    "precio": 200000,
+    "descripcion": "Trenzado negro con medallón redondo de corona, balines dorados lisos y tallados y cuentas negras con franja dorada. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hombre"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-corona-trenzada-negra.webp",
+        "mini": "img/nv/pulsera-corona-trenzada-negra-m.webp"
+      }
+    ],
+    "huella": "e1d8b959dc9f0644"
+  },
+  {
+    "id": "nv-p49",
+    "sku": "NV-P49",
+    "slug": "pulsera-bolsa-de-dinero",
+    "nombre": "Pulsera Bolsa de Dinero",
+    "categoria": "pulseras",
+    "precio": 220000,
+    "descripcion": "Tejido negro con dije colgante de bolsa de dinero con el signo del dólar, acompañado de balines dorados escarchados y lisos. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-bolsa-de-dinero.webp",
+        "mini": "img/nv/pulsera-bolsa-de-dinero-m.webp"
+      }
+    ],
+    "huella": "7458e08c710f8ccd"
+  },
+  {
+    "id": "nv-p50",
+    "sku": "NV-P50",
+    "slug": "pulsera-cruz-circones-verdes",
+    "nombre": "Pulsera Cruz Circones Verdes",
+    "categoria": "pulseras",
+    "precio": 300000,
+    "descripcion": "Balines dorados lisos y tallados en cordón verde, con separadores de circones verdes y dije colgante de cruz engastado en circones verdes. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-cruz-circones-verdes.webp",
+        "mini": "img/nv/pulsera-cruz-circones-verdes-m.webp"
+      }
+    ],
+    "huella": "018020d0a0f0e1c3"
+  },
+  {
+    "id": "nv-p51",
+    "sku": "NV-P51",
+    "slug": "pulsera-san-benito-hilo-rojo",
+    "nombre": "Pulsera San Benito Hilo Rojo",
+    "categoria": "pulseras",
+    "precio": 220000,
+    "descripcion": "Hilo rojo con balines dorados tallados y medalla de San Benito. En la foto se aprecian ambas caras de la medalla: la cruz y la imagen del santo. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-san-benito-hilo-rojo.webp",
+        "mini": "img/nv/pulsera-san-benito-hilo-rojo-m.webp"
+      }
+    ],
+    "huella": "cdc8ccbcc6730581"
+  },
+  {
+    "id": "nv-p52",
+    "sku": "NV-P52",
+    "slug": "pulsera-guadalupe-hilo-negro",
+    "nombre": "Pulsera Guadalupe Hilo Negro",
+    "categoria": "pulseras",
+    "precio": 250000,
+    "descripcion": "Hilo negro con balines dorados lisos, separador de circones negros y dije de la Virgen de Guadalupe. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-guadalupe-hilo-negro.webp",
+        "mini": "img/nv/pulsera-guadalupe-hilo-negro-m.webp"
+      }
+    ],
+    "huella": "05e1b1e3d179170f"
+  },
+  {
+    "id": "nv-p53",
+    "sku": "NV-P53",
+    "slug": "pulsera-crucifijo-hilo-rojo",
+    "nombre": "Pulsera Crucifijo Hilo Rojo",
+    "categoria": "pulseras",
+    "precio": 250000,
+    "descripcion": "Hilo rojo con crucifijo dorado al centro, balines tallados y cuentas rojas con franja dorada. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-crucifijo-hilo-rojo.webp",
+        "mini": "img/nv/pulsera-crucifijo-hilo-rojo-m.webp"
+      }
+    ],
+    "huella": "1f3676c3e1381937"
+  },
+  {
+    "id": "nv-p54",
+    "sku": "NV-P54",
+    "slug": "pulsera-balines-escarchados-alternados",
+    "nombre": "Pulsera Balines Escarchados Alternados",
+    "categoria": "pulseras",
+    "precio": 390000,
+    "descripcion": "Balines dorados lisos de brillo espejo alternados con balines escarchados, sobre cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-balines-escarchados-alternados.webp",
+        "mini": "img/nv/pulsera-balines-escarchados-alternados-m.webp"
+      }
+    ],
+    "huella": "126464f88c8ce122"
+  },
+  {
+    "id": "nv-p55",
+    "sku": "NV-P55",
+    "slug": "pulsera-guadalupe-tejido-rojo",
+    "nombre": "Pulsera Guadalupe Tejido Rojo",
+    "categoria": "pulseras",
+    "precio": 190000,
+    "descripcion": "Tejido rojo con medalla redonda de la Virgen de Guadalupe y un balín dorado a cada lado. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-guadalupe-tejido-rojo.webp",
+        "mini": "img/nv/pulsera-guadalupe-tejido-rojo-m.webp"
+      }
+    ],
+    "huella": "00f8b2c46c330400"
+  },
+  {
+    "id": "nv-p56",
+    "sku": "NV-P56",
+    "slug": "pulsera-corona-macrame-negro",
+    "nombre": "Pulsera Corona Macramé Negro",
+    "categoria": "pulseras",
+    "precio": 220000,
+    "descripcion": "Tejido macramé negro con medalla redonda de corona, balines dorados tallados y cuentas negras con franja dorada. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-corona-macrame-negro.webp",
+        "mini": "img/nv/pulsera-corona-macrame-negro-m.webp"
+      }
+    ],
+    "huella": "504c53c0ec310200"
+  },
+  {
+    "id": "nv-p57",
+    "sku": "NV-P57",
+    "slug": "pulsera-millonario-doble-hilera",
+    "nombre": "Pulsera Millonario Doble Hilera",
+    "categoria": "pulseras",
+    "precio": 440000,
+    "descripcion": "Hilo negro con doble hilera de balines dorados lisos y dije de millonario con sombrero de copa y bolsas de dinero. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-millonario-doble-hilera.webp",
+        "mini": "img/nv/pulsera-millonario-doble-hilera-m.webp"
+      }
+    ],
+    "huella": "0de6b1b4cc611b0f"
+  },
+  {
+    "id": "nv-p58",
+    "sku": "NV-P58",
+    "slug": "pulsera-millonario-circones-de-colores",
+    "nombre": "Pulsera Millonario Circones de Colores",
+    "categoria": "pulseras",
+    "precio": 1000000,
+    "descripcion": "Racimos de balines dorados tallados con un llamativo dije de millonario adornado con circones azules, rojos y blancos, que sostiene bolsas de dinero cubiertas de circones. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hombre"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-millonario-circones-de-colores.webp",
+        "mini": "img/nv/pulsera-millonario-circones-de-colores-m.webp"
+      }
+    ],
+    "huella": "730b3b324c3e1e9e"
+  },
+  {
+    "id": "nv-p59",
+    "sku": "NV-P59",
+    "slug": "pulsera-corona-circones-tejido-camel",
+    "nombre": "Pulsera Corona Circones Tejido Camel",
+    "categoria": "pulseras",
+    "precio": 280000,
+    "descripcion": "Tejido color camel con medallón de corona bordeado de circones, balines dorados tallados y separador con circones. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-corona-circones-tejido-camel.webp",
+        "mini": "img/nv/pulsera-corona-circones-tejido-camel-m.webp"
+      }
+    ],
+    "huella": "213170f848018726"
+  },
+  {
+    "id": "nv-p60",
+    "sku": "NV-P60",
+    "slug": "pulsera-racimo-oro-rosa",
+    "nombre": "Pulsera Racimo Oro Rosa",
+    "categoria": "pulseras",
+    "precio": 250000,
+    "descripcion": "Tejido negro con un racimo central de balines lisos en oro rosa y balines dorados escarchados, rodeados de pequeños balines tallados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-racimo-oro-rosa.webp",
+        "mini": "img/nv/pulsera-racimo-oro-rosa-m.webp"
+      }
+    ],
+    "huella": "b96f69c5d969310f"
+  },
+  {
+    "id": "nv-p61",
+    "sku": "NV-P61",
+    "slug": "pulsera-medallon-dolar",
+    "nombre": "Pulsera Medallón Dólar",
+    "categoria": "pulseras",
+    "precio": 450000,
+    "descripcion": "Balines dorados tallados con medallón del signo dólar enmarcado por un borde de eslabones y cuentas negras con franja dorada. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "hombre"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-medallon-dolar.webp",
+        "mini": "img/nv/pulsera-medallon-dolar-m.webp"
+      }
+    ],
+    "huella": "c723386c9bbb6219"
+  },
+  {
+    "id": "nv-p62",
+    "sku": "NV-P62",
+    "slug": "pulsera-millonario-cuentas-verdes",
+    "nombre": "Pulsera Millonario Cuentas Verdes",
+    "categoria": "pulseras",
+    "precio": 280000,
+    "descripcion": "Balines dorados tallados con cuentas verde esmeralda de franja dorada y dije central de millonario con bolsas de dinero. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-millonario-cuentas-verdes.webp",
+        "mini": "img/nv/pulsera-millonario-cuentas-verdes-m.webp"
+      }
+    ],
+    "huella": "2727236164180d0f"
+  },
+  {
+    "id": "nv-p63",
+    "sku": "NV-P63",
+    "slug": "pulsera-millonario-tejido-camel",
+    "nombre": "Pulsera Millonario Tejido Camel",
+    "categoria": "pulseras",
+    "precio": 245000,
+    "descripcion": "Tejido macramé color camel con balines dorados estriados y dije de millonario con sombrero de copa y bolsas de dinero. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-millonario-tejido-camel.webp",
+        "mini": "img/nv/pulsera-millonario-tejido-camel-m.webp"
+      }
+    ],
+    "huella": "1f3e1b19c460310f"
+  },
+  {
+    "id": "nv-p64",
+    "sku": "NV-P64",
+    "slug": "pulsera-millonario-cuentas-negras",
+    "nombre": "Pulsera Millonario Cuentas Negras",
+    "categoria": "pulseras",
+    "precio": 430000,
+    "descripcion": "Balines dorados tallados con cuentas negras de franjas doradas y dije de millonario al centro. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-millonario-cuentas-negras.webp",
+        "mini": "img/nv/pulsera-millonario-cuentas-negras-m.webp"
+      }
+    ],
+    "huella": "190c98b3a2f6e6fc"
+  },
+  {
+    "id": "nv-p65",
+    "sku": "NV-P65",
+    "slug": "pulsera-escarchada-centro-oro-rosa",
+    "nombre": "Pulsera Escarchada Centro Oro Rosa",
+    "categoria": "pulseras",
+    "precio": 450000,
+    "descripcion": "Balines dorados escarchados y lisos alternados, con dos balines en oro rosa al centro. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-escarchada-centro-oro-rosa.webp",
+        "mini": "img/nv/pulsera-escarchada-centro-oro-rosa-m.webp"
+      }
+    ],
+    "huella": "ff2ff3ddc6717bfd"
+  },
+  {
+    "id": "nv-p66",
+    "sku": "NV-P66",
+    "slug": "pulsera-balines-escarchados-alternados-ii",
+    "nombre": "Pulsera Balines Escarchados Alternados Ii",
+    "categoria": "pulseras",
+    "precio": 480000,
+    "descripcion": "Hilera de balines dorados lisos y escarchados alternados con pequeños separadores dorados. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-balines-escarchados-alternados-ii.webp",
+        "mini": "img/nv/pulsera-balines-escarchados-alternados-ii-m.webp"
+      }
+    ],
+    "huella": "0b2058c6d64c7933"
+  },
+  {
+    "id": "nv-p67",
+    "sku": "NV-P67",
+    "slug": "pulsera-san-miguel-tres-oros",
+    "nombre": "Pulsera San Miguel Tres Oros",
+    "categoria": "pulseras",
+    "precio": 325000,
+    "descripcion": "Balines lisos y tallados en tres tonos de oro con medalla redonda de San Miguel Arcángel al centro. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-san-miguel-tres-oros.webp",
+        "mini": "img/nv/pulsera-san-miguel-tres-oros-m.webp"
+      }
+    ],
+    "huella": "6869130680406030"
+  },
+  {
+    "id": "nv-p68",
+    "sku": "NV-P68",
+    "slug": "pulsera-minimalista-balines-lisos",
+    "nombre": "Pulsera Minimalista Balines Lisos",
+    "categoria": "pulseras",
+    "precio": 250000,
+    "descripcion": "Fina hilera de pequeños balines dorados lisos en cordón negro con nudo corredizo ajustable. Sobria y versátil. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "hombre"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-minimalista-balines-lisos.webp",
+        "mini": "img/nv/pulsera-minimalista-balines-lisos-m.webp"
+      }
+    ],
+    "huella": "474cf8620c080c1c"
+  },
+  {
+    "id": "nv-p69",
+    "sku": "NV-P69",
+    "slug": "pulsera-avion-hilo-rojo",
+    "nombre": "Pulsera Avión Hilo Rojo",
+    "categoria": "pulseras",
+    "precio": 130000,
+    "descripcion": "Tejido rojo con balines dorados lisos y tallados y un delicado dije colgante de avión. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-avion-hilo-rojo.webp",
+        "mini": "img/nv/pulsera-avion-hilo-rojo-m.webp"
+      }
+    ],
+    "huella": "86c6c3c3800c0503"
+  },
+  {
+    "id": "nv-p70",
+    "sku": "NV-P70",
+    "slug": "pulsera-san-benito-cuentas-rojas",
+    "nombre": "Pulsera San Benito Cuentas Rojas",
+    "categoria": "pulseras",
+    "precio": 140000,
+    "descripcion": "Tejido rojo con medalla redonda de San Benito, cuentas rojas con franja dorada y balines dorados escarchados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-san-benito-cuentas-rojas.webp",
+        "mini": "img/nv/pulsera-san-benito-cuentas-rojas-m.webp"
+      }
+    ],
+    "huella": "00f0e0d0e839062c"
+  },
+  {
+    "id": "nv-p71",
+    "sku": "NV-P71",
+    "slug": "pulsera-negra-mate-centro-dorado",
+    "nombre": "Pulsera Negra Mate Centro Dorado",
+    "categoria": "pulseras",
+    "precio": 140000,
+    "descripcion": "Cuentas negras mate con cinco balines dorados escarchados al centro. Un diseño sobrio de marcado contraste. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hombre"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-negra-mate-centro-dorado.webp",
+        "mini": "img/nv/pulsera-negra-mate-centro-dorado-m.webp"
+      }
+    ],
+    "huella": "4cec968cd864785e"
+  },
+  {
+    "id": "nv-p72",
+    "sku": "NV-P72",
+    "slug": "pulsera-tejido-dorado-cuentas-negras",
+    "nombre": "Pulsera Tejido Dorado Cuentas Negras",
+    "categoria": "pulseras",
+    "precio": 120000,
+    "descripcion": "Tejido en hilo dorado con cuentas negras mate alternadas con balines dorados tallados y lisos. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-tejido-dorado-cuentas-negras.webp",
+        "mini": "img/nv/pulsera-tejido-dorado-cuentas-negras-m.webp"
+      }
+    ],
+    "huella": "598f29556d31cb78"
+  },
+  {
+    "id": "nv-p73",
+    "sku": "NV-P73",
+    "slug": "pulsera-balines-tallados-hilo-negro",
+    "nombre": "Pulsera Balines Tallados Hilo Negro",
+    "categoria": "pulseras",
+    "precio": 480000,
+    "descripcion": "Hilera de balines dorados tallados de gran brillo con cierre de nudo corredizo en hilo negro. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-balines-tallados-hilo-negro.webp",
+        "mini": "img/nv/pulsera-balines-tallados-hilo-negro-m.webp"
+      }
+    ],
+    "huella": "b9b8b8f0f8ed913d"
+  },
+  {
+    "id": "nv-p74",
+    "sku": "NV-P74",
+    "slug": "pulsera-negra-y-dorada-alternada",
+    "nombre": "Pulsera Negra y Dorada Alternada",
+    "categoria": "pulseras",
+    "precio": 300000,
+    "descripcion": "Cuentas negras con textura de hilo enrollado alternadas con balines dorados lisos. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-negra-y-dorada-alternada.webp",
+        "mini": "img/nv/pulsera-negra-y-dorada-alternada-m.webp"
+      }
+    ],
+    "huella": "cbc9c6e1cedee016"
+  },
+  {
+    "id": "nv-p75",
+    "sku": "NV-P75",
+    "slug": "pulsera-san-benito-hilo-negro",
+    "nombre": "Pulsera San Benito Hilo Negro",
+    "categoria": "pulseras",
+    "precio": 380000,
+    "descripcion": "Cordón negro con medalla redonda de San Benito y balines dorados tallados y lisos. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo",
+      "religiosa"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-san-benito-hilo-negro.webp",
+        "mini": "img/nv/pulsera-san-benito-hilo-negro-m.webp"
+      }
+    ],
+    "huella": "efa47ccece7670db"
+  },
+  {
+    "id": "nv-p76",
+    "sku": "NV-P76",
+    "slug": "pulsera-tricolor-balines-lisos",
+    "nombre": "Pulsera Tricolor Balines Lisos",
+    "categoria": "pulseras",
+    "precio": 90000,
+    "descripcion": "Hilo en amarillo, azul y rojo con tramos enrollados de cada color y balines dorados lisos. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-tricolor-balines-lisos.webp",
+        "mini": "img/nv/pulsera-tricolor-balines-lisos-m.webp"
+      }
+    ],
+    "huella": "3e1b595d5e2fb0c0"
+  },
+  {
+    "id": "nv-p77",
+    "sku": "NV-P77",
+    "slug": "pulsera-balon-tejido-tricolor",
+    "nombre": "Pulsera Balón Tejido Tricolor",
+    "categoria": "pulseras",
+    "precio": 140000,
+    "descripcion": "Tejido trenzado en amarillo, azul y rojo con balines dorados lisos y medalla redonda de balón de fútbol. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-balon-tejido-tricolor.webp",
+        "mini": "img/nv/pulsera-balon-tejido-tricolor-m.webp"
+      }
+    ],
+    "huella": "d8181cccec91c6f5"
+  },
+  {
+    "id": "nv-p78",
+    "sku": "NV-P78",
+    "slug": "pulsera-balon-cuentas-negras",
+    "nombre": "Pulsera Balón Cuentas Negras",
+    "categoria": "pulseras",
+    "precio": 220000,
+    "descripcion": "Cuentas negras con franja dorada, balines dorados lisos y medalla de balón de fútbol, en cordón negro con nudo corredizo. En la foto se muestran dos piezas. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-balon-cuentas-negras.webp",
+        "mini": "img/nv/pulsera-balon-cuentas-negras-m.webp"
+      }
+    ],
+    "huella": "840c9ce3ebe8e041"
+  },
+  {
+    "id": "nv-p79",
+    "sku": "NV-P79",
+    "slug": "pulsera-balon-hilo-tricolor",
+    "nombre": "Pulsera Balón Hilo Tricolor",
+    "categoria": "pulseras",
+    "precio": 165000,
+    "descripcion": "Hilo en amarillo, azul y rojo con tramos enrollados, balines dorados lisos y medalla redonda de balón de fútbol. Detalles en oro laminado 18K.",
+    "etiquetas": [
+      "hilo"
+    ],
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-balon-hilo-tricolor.webp",
+        "mini": "img/nv/pulsera-balon-hilo-tricolor-m.webp"
+      }
+    ],
+    "huella": "e6e4c682e8ecfc80"
+  },
+  {
+    "id": "nv-p80",
+    "sku": "NV-P80",
+    "slug": "pulsera-balon-cuentas-tricolor",
+    "nombre": "Pulsera Balón Cuentas Tricolor",
+    "categoria": "pulseras",
+    "precio": 240000,
+    "descripcion": "Cuentas estriadas amarillas, azules y rojas con balines dorados tallados y medalla de balón de fútbol. En la foto se muestran dos piezas. Detalles en oro laminado 18K.",
+    "fotos": [
+      {
+        "src": "img/nv/pulsera-balon-cuentas-tricolor.webp",
+        "mini": "img/nv/pulsera-balon-cuentas-tricolor-m.webp"
+      }
+    ],
+    "huella": "2361c1a20a4d190f"
+  }
+]

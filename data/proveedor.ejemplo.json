@@ -1,0 +1,8 @@
+{
+  "_nota": "Copia este archivo a data/privado/proveedor.json con los datos reales del proveedor. La carpeta data/privado/ no se sube a GitHub.",
+  "tienda": "https://TIENDA-DEL-PROVEEDOR",
+  "api": "https://API-DE-LA-TIENDA/parse/classes/",
+  "appId": "ID_DE_APLICACION_PUBLICO_DE_LA_TIENDA",
+  "owner": "ID_DEL_DUENO_DE_LA_TIENDA",
+  "margen": 15000
+}
