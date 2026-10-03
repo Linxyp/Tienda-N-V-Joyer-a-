@@ -3,14 +3,16 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { ArrowRight, Award, Gem, Sparkles } from "lucide-react";
+import { useState } from "react";
 import type { ProductoResumen } from "@/lib/tipos";
-import { asset, precio } from "@/lib/utilidades";
+import { asset, cn, precio } from "@/lib/utilidades";
 import { CuandoCerca } from "../CuandoCerca";
 import { Revelar } from "../Revelar";
 
 const EscenaGema = dynamic(() => import("../tres/EscenaGema"), { ssr: false });
 
 export function Premium({ productos, total }: { productos: ProductoResumen[]; total: number }) {
+  const [escenaLista, setEscenaLista] = useState(false);
   return (
     <section className="grano relative isolate overflow-hidden bg-noche py-20 text-marfil sm:py-28">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_75%_40%,rgba(201,155,60,.22),transparent_70%)]" />
@@ -46,7 +48,7 @@ export function Premium({ productos, total }: { productos: ProductoResumen[]; to
           <div className="mt-10 grid grid-cols-3 gap-3">
             {productos.slice(0, 3).map((p, i) => (
               <Revelar key={p.id} retraso={i * 0.1}>
-                <Link href={`/producto/${p.slug}/`} className="group block">
+                <Link href={`/producto/${p.slug}/`} prefetch={false} className="group block">
                   <div className="borde-oro overflow-hidden rounded-2xl bg-carbon">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
@@ -69,12 +71,25 @@ export function Premium({ productos, total }: { productos: ProductoResumen[]; to
           </Revelar>
         </div>
 
-        <CuandoCerca
-          className="relative order-1 h-[380px] sm:h-[480px] lg:order-2 lg:h-[620px]"
-          mientras={<div className="absolute inset-0 rounded-full bg-[radial-gradient(circle,rgba(232,201,119,.2),transparent_60%)]" />}
-        >
-          <EscenaGema className="absolute inset-0" />
-        </CuandoCerca>
+        <div className="relative order-1 h-[380px] sm:h-[480px] lg:order-2 lg:h-[620px]">
+          {/* Imagen del diamante mientras llega la escena 3D, que arranca sola al acercarse a la sección */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={asset("marca/gema-3d-900.webp")}
+            srcSet={`${asset("marca/gema-3d-600.webp")} 600w, ${asset("marca/gema-3d-900.webp")} 900w`}
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            alt="Diamante girando entre aros de oro"
+            loading="lazy"
+            decoding="async"
+            className={cn("absolute inset-0 size-full object-contain transition-opacity duration-1000", escenaLista && "opacity-0")}
+          />
+          <CuandoCerca className="absolute inset-0" margen="300px">
+            <EscenaGema
+              alListo={() => setEscenaLista(true)}
+              className={cn("absolute inset-0 transition-opacity duration-1000", escenaLista ? "opacity-100" : "opacity-0")}
+            />
+          </CuandoCerca>
+        </div>
       </div>
     </section>
   );

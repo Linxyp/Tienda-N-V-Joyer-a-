@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { Plus, SlidersHorizontal } from "lucide-react";
 import { nombreSub, categoriaPorId } from "@/config/categorias";
 import type { ProductoResumen } from "@/lib/tipos";
-import { asset, cn, precio } from "@/lib/utilidades";
+import { asset, cn, precio, SIZES_TARJETA, srcSetMini } from "@/lib/utilidades";
 import { Inclinacion3D } from "./Inclinacion3D";
 import { useAgregar } from "./useAgregar";
 
@@ -33,15 +33,18 @@ export function TarjetaProducto({
             : "bg-white shadow-[0_18px_40px_-28px_rgba(60,40,10,.45)] ring-1 ring-arena/70 hover:shadow-[0_34px_70px_-30px_rgba(150,105,30,.55)]",
         )}
       >
-        <Link href={href} className="relative block aspect-[4/5] overflow-hidden bg-perla" style={{ transform: "translateZ(30px)" }}>
+        <Link href={href} prefetch={false} className="relative block aspect-[4/5] overflow-hidden bg-perla" style={{ transform: "translateZ(30px)" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             ref={imgRef}
             src={asset(p.mini)}
+            srcSet={srcSetMini(p.mini)}
+            sizes={SIZES_TARJETA}
             alt={p.nombre}
             width={640}
             height={800}
             loading={prioridad ? "eager" : "lazy"}
+            fetchPriority={prioridad ? "high" : "auto"}
             decoding="async"
             className={cn(
               "absolute inset-0 size-full object-cover transition-all duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.07]",
@@ -52,13 +55,15 @@ export function TarjetaProducto({
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={asset(p.mini2)}
+              srcSet={srcSetMini(p.mini2)}
+              sizes={SIZES_TARJETA}
               alt=""
               aria-hidden
               width={640}
               height={800}
               loading="lazy"
               decoding="async"
-              className="absolute inset-0 size-full scale-[1.07] object-cover opacity-0 transition-all duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-100 group-hover:opacity-100"
+              className="absolute inset-0 hidden size-full scale-[1.07] object-cover opacity-0 [@media(hover:hover)]:block transition-all duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-100 group-hover:opacity-100"
             />
           )}
           <span className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/25 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
@@ -79,6 +84,7 @@ export function TarjetaProducto({
         {p.opciones ? (
           <Link
             href={href}
+            prefetch={false}
             aria-label={`Elegir opciones de ${p.nombre}`}
             className="absolute right-3 top-3 z-30 grid size-10 place-items-center rounded-full bg-white/90 text-tinta shadow-lg backdrop-blur transition-all duration-300 hover:scale-110 hover:bg-oro-300 sm:translate-y-1 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100"
             style={{ transform: "translateZ(60px)" }}
@@ -102,7 +108,7 @@ export function TarjetaProducto({
           </button>
         )}
 
-        <Link href={href} className="flex flex-1 flex-col gap-1.5 px-4 pb-4 pt-3.5" style={{ transform: "translateZ(20px)" }}>
+        <Link href={href} prefetch={false} className="flex flex-1 flex-col gap-1.5 px-4 pb-4 pt-3.5" style={{ transform: "translateZ(20px)" }}>
           <span className={cn("text-[0.62rem] font-bold tracking-[0.22em] uppercase", oscuro ? "text-oro-400" : "text-oro-700")}>
             {etiqueta}
           </span>

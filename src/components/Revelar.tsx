@@ -20,8 +20,8 @@ export function Revelar({
   return (
     <Comp
       className={className}
-      initial={reducir ? false : { opacity: 0, y: 36, rotateX: 14, filter: "blur(6px)" }}
-      whileInView={{ opacity: 1, y: 0, rotateX: 0, filter: "blur(0px)" }}
+      initial={reducir ? false : { opacity: 0, y: 36, rotateX: 14 }}
+      whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
       viewport={{ once: true, margin: "0px 0px -12% 0px" }}
       transition={{ duration: 0.9, delay: retraso, ease: [0.22, 1, 0.36, 1] }}
       style={{ transformPerspective: 900 }}

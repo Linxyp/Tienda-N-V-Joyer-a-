@@ -113,6 +113,7 @@ function Carta({
   return (
     <Link
       href={`/producto/${p.slug}/`}
+      prefetch={false}
       draggable={false}
       className="group absolute inset-x-0 top-0 block"
       style={{ transform: `rotateY(${base}deg) translateZ(${radio}px)`, backfaceVisibility: "hidden" }}

@@ -32,3 +32,13 @@ export function hash(s: string) {
 }
 
 export const plural = (n: number, uno: string, varios: string) => `${n} ${n === 1 ? uno : varios}`;
+
+/**
+ * Miniaturas en dos tamaños (360 y 640 px): cada pantalla descarga solo la que necesita.
+ * Convención de archivos: "foto-m.webp" (640) y "foto-s.webp" (360).
+ */
+export const srcSetMini = (mini: string) =>
+  mini.endsWith("-m.webp") ? `${asset(mini.replace(/-m\.webp$/, "-s.webp"))} 360w, ${asset(mini)} 640w` : undefined;
+
+/** Tamaño en pantalla de las tarjetas del catálogo (para elegir la miniatura correcta). */
+export const SIZES_TARJETA = "(min-width: 1280px) 300px, (min-width: 1024px) 25vw, (min-width: 768px) 30vw, calc(50vw - 26px)";

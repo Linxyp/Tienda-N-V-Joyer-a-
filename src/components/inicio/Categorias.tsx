@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import type { ResumenCategoria } from "@/lib/catalogo";
-import { asset, cn, precio } from "@/lib/utilidades";
+import { asset, cn, precio, srcSetMini } from "@/lib/utilidades";
 import { Inclinacion3D } from "../Inclinacion3D";
 import { Revelar } from "../Revelar";
 import { TituloSeccion } from "../TituloSeccion";
@@ -33,8 +33,11 @@ export function Categorias({ categorias }: { categorias: ResumenCategoria[] }) {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={asset(c.portada)}
+                    srcSet={srcSetMini(c.portada)}
+                    sizes={i === 0 ? "(min-width: 1024px) 50vw, 100vw" : "(min-width: 1024px) 25vw, 50vw"}
                     alt={c.nombre}
                     loading="lazy"
+                    decoding="async"
                     className="absolute inset-0 size-full object-cover opacity-90 transition-transform duration-[1.6s] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-110"
                   />
                   <span className="absolute inset-0 bg-gradient-to-t from-onix via-onix/35 to-transparent" />

@@ -175,6 +175,7 @@ export function Buscador() {
                         <li key={p.id}>
                           <Link
                             href={`/producto/${p.slug}/`}
+                            prefetch={false}
                             onClick={() => {
                               cerrar();
                               setQ("");

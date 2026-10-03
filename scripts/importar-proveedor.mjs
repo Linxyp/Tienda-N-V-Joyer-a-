@@ -23,6 +23,8 @@ import {
 } from "./lib/normalizar.mjs";
 
 const CACHE = path.resolve(".cache/proveedor");
+/** Miniatura pequeña (360 px) que acompaña a cada "-m.webp" (640 px) para pantallas de baja densidad. */
+const miniPequena = (mini) => mini.replace(/-m\.webp$/, "-s.webp");
 const SALIDA = "public/img/p";
 const leer = (f, def) => (existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : def);
 const DIAS_NUEVO = 45;
@@ -207,7 +209,10 @@ await enParalelo(
   salida.flatMap((p) =>
     p.fotos.map((f) => async () => {
       await fotoGrande(f._origen, path.join("public", f.src));
-      if (f.mini) await miniatura(f._origen, path.join("public", f.mini));
+      if (f.mini) {
+        await miniatura(f._origen, path.join("public", f.mini));
+        await miniatura(f._origen, path.join("public", miniPequena(f.mini)), { ancho: 360, alto: 450, calidad: 76 });
+      }
     }),
   ),
   6,
@@ -215,7 +220,9 @@ await enParalelo(
 );
 
 // Borra fotos de productos que el proveedor ya no publica
-const vigentes = new Set(salida.flatMap((p) => p.fotos.flatMap((f) => [f.src, f.mini].filter(Boolean).map((s) => path.basename(s)))));
+const vigentes = new Set(
+  salida.flatMap((p) => p.fotos.flatMap((f) => [f.src, f.mini, f.mini && miniPequena(f.mini)].filter(Boolean).map((s) => path.basename(s)))),
+);
 let borradas = 0;
 if (existsSync(SALIDA))
   for (const f of await readdir(SALIDA))

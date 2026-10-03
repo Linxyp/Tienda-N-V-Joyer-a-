@@ -52,13 +52,25 @@ const materialDiamante = new THREE.MeshPhysicalMaterial({
   flatShading: true,
 });
 
-export function Diamante(props: ThreeElements["mesh"]) {
+// Versión liviana para celulares: mismo look de facetas, sin iridiscencia ni clearcoat (shader mucho más barato)
+const materialDiamanteLigero = new THREE.MeshStandardMaterial({
+  color: "#ffffff",
+  vertexColors: true,
+  metalness: 0.5,
+  roughness: 0.04,
+  envMapIntensity: 3.6,
+  emissive: "#7d8fae",
+  emissiveIntensity: 0.32,
+  flatShading: true,
+});
+
+export function Diamante({ ligero = false, ...props }: ThreeElements["mesh"] & { ligero?: boolean }) {
   const geo = useMemo(() => geometriaDiamante(), []);
-  return <mesh geometry={geo} material={materialDiamante} {...props} />;
+  return <mesh geometry={geo} material={ligero ? materialDiamanteLigero : materialDiamante} {...props} />;
 }
 
 /** Anillo solitario: aro + engaste de 6 garras + diamante. */
-export function Anillo() {
+export function Anillo({ ligero = false }: { ligero?: boolean }) {
   const garras = useMemo(
     () =>
       Array.from({ length: 6 }, (_, i) => {
@@ -81,7 +93,7 @@ export function Anillo() {
           <cylinderGeometry args={[0.022, 0.034, 0.5, 10]} />
         </mesh>
       ))}
-      <Diamante position={[0, 1.52, 0]} scale={0.62} />
+      <Diamante position={[0, 1.52, 0]} scale={0.62} ligero={ligero} />
     </group>
   );
 }
@@ -142,9 +154,9 @@ export function Balines() {
   );
 }
 
-export function Estudio() {
+export function Estudio({ resolucion = 256 }: { resolucion?: number }) {
   return (
-    <Environment resolution={256} frames={1}>
+    <Environment resolution={resolucion} frames={1}>
       <group rotation={[-Math.PI / 3, 0, 1]}>
         <Lightformer form="circle" intensity={5} rotation-x={Math.PI / 2} position={[0, 5, -9]} scale={2} color="#fff6dd" />
         <Lightformer form="circle" intensity={2.5} rotation-y={Math.PI / 2} position={[-5, 1, -1]} scale={2} />
@@ -171,3 +183,17 @@ export function useVisible(ref: React.RefObject<HTMLElement | null>) {
   return visible;
 }
 
+
+/** Avisa una sola vez cuando la escena ya pintó sus primeros cuadros (para fundirla con la imagen previa). */
+export function AvisarListo({ alListo }: { alListo?: () => void }) {
+  const cuadros = useRef(0);
+  useFrame(() => {
+    cuadros.current++;
+    if (cuadros.current === 4) alListo?.();
+  });
+  return null;
+}
+
+/** Celular o tableta (pantalla pequeña o táctil): se usa la versión liviana de las escenas. */
+export const esLigero = () =>
+  typeof window !== "undefined" && window.matchMedia("(max-width: 1023px), (pointer: coarse)").matches;

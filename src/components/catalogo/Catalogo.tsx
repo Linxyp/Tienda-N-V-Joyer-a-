@@ -108,11 +108,30 @@ export function Catalogo({
     setMostrar(POR_PAGINA);
   };
 
+  // El índice completo (para filtrar, ordenar y seguir cargando) se descarga cuando el navegador queda libre,
+  // o de inmediato si la persona ya está filtrando o llegó al final de las primeras joyas.
+  const [ocioso, setOcioso] = useState(false);
+  const filtrando = Boolean(q.trim() || sub || premium || hombre || rango || orden !== "destacados");
   useEffect(() => {
+    const listo = () => setOcioso(true);
+    const enReposo = () => {
+      if ("requestIdleCallback" in window) window.requestIdleCallback(listo, { timeout: 2500 });
+      else setTimeout(listo, 600);
+    };
+    if (document.readyState === "complete") enReposo();
+    else window.addEventListener("load", enReposo, { once: true });
+    return () => window.removeEventListener("load", enReposo);
+  }, []);
+  useEffect(() => {
+    if (!ocioso && !filtrando) return;
+    let vigente = true;
     cargarCatalogo()
-      .then((lista) => setTodos(categoria ? lista.filter((p) => p.categoria === categoria) : lista))
-      .catch(() => setTodos(null));
-  }, [categoria]);
+      .then((lista) => vigente && setTodos(categoria ? lista.filter((p) => p.categoria === categoria) : lista))
+      .catch(() => vigente && setTodos(null));
+    return () => {
+      vigente = false;
+    };
+  }, [ocioso, filtrando, categoria]);
 
   const base = todos ?? iniciales;
   const filtrados = useMemo(() => {
@@ -137,7 +156,7 @@ export function Catalogo({
     }
   }, [base, q, sub, premium, hombre, rango, orden]);
 
-  const cargando = !todos && Boolean(q.trim() || sub || premium || hombre || rango || orden !== "destacados");
+  const cargando = !todos && filtrando;
   const visibles = filtrados.slice(0, mostrar);
   const hayMas = todos ? mostrar < filtrados.length : iniciales.length < total;
 
@@ -145,7 +164,14 @@ export function Catalogo({
   useEffect(() => {
     const el = centinela.current;
     if (!el) return;
-    const io = new IntersectionObserver(([e]) => e.isIntersecting && setMostrar((m) => m + POR_PAGINA), { rootMargin: "900px" });
+    const io = new IntersectionObserver(
+      ([e]) => {
+        if (!e.isIntersecting) return;
+        setOcioso(true);
+        setMostrar((m) => m + POR_PAGINA);
+      },
+      { rootMargin: "900px" },
+    );
     io.observe(el);
     return () => io.disconnect();
   }, [filtrados.length]);
@@ -264,6 +290,7 @@ export function Catalogo({
             )}
           </div>
 
+          <h2 className="sr-only">Joyas disponibles</h2>
           {visibles.length === 0 && !cargando ? (
             <div className="rounded-3xl bg-white p-12 text-center ring-1 ring-arena">
               <p className="font-display text-3xl text-tinta">No encontramos joyas con esos filtros</p>
@@ -282,7 +309,7 @@ export function Catalogo({
                   transition={{ duration: 0.6, delay: Math.min(i % POR_PAGINA, 8) * 0.04, ease: [0.22, 1, 0.36, 1] }}
                   style={{ transformPerspective: 900 }}
                 >
-                  <TarjetaProducto p={p} prioridad={i < 6} />
+                  <TarjetaProducto p={p} prioridad={i < 2} />
                 </motion.div>
               ))}
             </div>

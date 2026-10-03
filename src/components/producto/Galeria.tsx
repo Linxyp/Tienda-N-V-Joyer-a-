@@ -58,6 +58,8 @@ export function Galeria({ fotos, nombre, insignias }: { fotos: Foto[]; nombre: s
                 alt={k === 0 ? nombre : `${nombre} — foto ${k + 1}`}
                 className="size-full shrink-0 snap-center object-cover"
                 loading={k === 0 ? "eager" : "lazy"}
+                fetchPriority={k === 0 ? "high" : "auto"}
+                decoding="async"
                 onClick={() => setLupa(true)}
               />
             ))}
@@ -78,6 +80,7 @@ export function Galeria({ fotos, nombre, insignias }: { fotos: Foto[]; nombre: s
                 key={fotos[i].src}
                 src={asset(fotos[i].src)}
                 alt={nombre}
+                fetchPriority={i === 0 ? "high" : "auto"}
                 initial={{ opacity: 0, scale: 1.04 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}

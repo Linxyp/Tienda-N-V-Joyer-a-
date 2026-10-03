@@ -278,6 +278,19 @@
     }
   }
 
+  /* El título solo se desliza (sin desvanecerse): se pinta de inmediato y no retrasa la carga visible */
+  .entrada-titulo {
+    animation: entrada-titulo 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @keyframes entrada-titulo {
+    from {
+      transform: translateY(18px);
+    }
+    to {
+      transform: none;
+    }
+  }
+
   .ceja {
     font-size: 0.72rem;
     font-weight: 700;
@@ -302,7 +315,8 @@
     border: 1px solid var(--color-arena);
     background: white;
     padding: 0.85rem 1rem;
-    font-size: 0.95rem;
+    /* 16px: así iPhone no hace zoom al tocar el campo */
+    font-size: 1rem;
     color: var(--color-tinta);
     transition:
       border-color 0.2s,

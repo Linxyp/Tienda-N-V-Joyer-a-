@@ -79,6 +79,7 @@ await enParalelo(
   productos.map((p) => async () => {
     await fotoGrande(p._origen, path.join("public", p.fotos[0].src), { calidad: 84 });
     await miniatura(p._origen, path.join("public", p.fotos[0].mini));
+    await miniatura(p._origen, path.join("public", p.fotos[0].mini.replace(/-m\.webp$/, "-s.webp")), { ancho: 360, alto: 450, calidad: 76 });
     p.huella = await huella(p._origen);
   }),
   6,
