@@ -41,9 +41,9 @@ function BarraAvisos() {
       <AnimatePresence mode="wait">
         <motion.p
           key={i}
-          initial={{ y: 18, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -18, opacity: 0 }}
+          initial={{ y: "100%" }}
+          animate={{ y: 0 }}
+          exit={{ y: "-100%" }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
           className="absolute inset-0 grid place-items-center truncate px-4 text-[0.62rem] font-semibold tracking-[0.16em] text-oro-200 uppercase sm:text-[0.68rem] sm:tracking-[0.22em]"
         >

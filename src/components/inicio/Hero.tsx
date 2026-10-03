@@ -20,7 +20,7 @@ function useMontarTarde() {
   useEffect(() => {
     const iniciar = () => setListo(true);
     const enReposo = () => {
-      if ("requestIdleCallback" in window) window.requestIdleCallback(iniciar, { timeout: 900 });
+      if ("requestIdleCallback" in window) window.requestIdleCallback(iniciar, { timeout: 2000 });
       else setTimeout(iniciar, 150);
     };
     if (document.readyState === "complete") enReposo();
@@ -57,7 +57,7 @@ export function Hero({ totalProductos }: { totalProductos: number }) {
               fetchPriority="high"
               decoding="async"
               className={cn(
-                "absolute inset-0 size-full object-contain transition-opacity duration-1000 lg:-inset-x-16 lg:w-[calc(100%+8rem)]",
+                "absolute inset-0 size-full animate-flotar object-contain transition-opacity duration-1000 lg:-inset-x-16 lg:w-[calc(100%+8rem)]",
                 escenaLista && "opacity-0",
               )}
             />

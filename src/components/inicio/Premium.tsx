@@ -81,7 +81,7 @@ export function Premium({ productos, total }: { productos: ProductoResumen[]; to
             alt="Diamante girando entre aros de oro"
             loading="lazy"
             decoding="async"
-            className={cn("absolute inset-0 size-full object-contain transition-opacity duration-1000", escenaLista && "opacity-0")}
+            className={cn("absolute inset-0 size-full animate-flotar object-contain transition-opacity duration-1000", escenaLista && "opacity-0")}
           />
           <CuandoCerca className="absolute inset-0" margen="300px">
             <EscenaGema
