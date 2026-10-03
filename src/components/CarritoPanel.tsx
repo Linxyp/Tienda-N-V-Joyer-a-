@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { ArrowRight, Minus, Plus, ShoppingBag, Trash, X } from "lucide-react";
 import { useEffect } from "react";
+import { toast } from "sonner";
 import { METODOS_PAGO } from "@/config/tienda";
 import { textoOpciones } from "@/lib/whatsapp";
 import { asset, plural, precio } from "@/lib/utilidades";
@@ -18,6 +19,7 @@ export function CarritoPanel() {
 
   useEffect(() => {
     if (!abierto) return;
+    toast.dismiss(); // el aviso de "Agregado" ya no hace falta con el pedido abierto
     const esc = (e: KeyboardEvent) => e.key === "Escape" && cerrar();
     window.addEventListener("keydown", esc);
     document.documentElement.style.overflow = "hidden";

@@ -47,6 +47,7 @@ interface ProductoProveedor {
   caracteristicas: string[];
   fotos: Foto[];
   duplicaDe?: string;
+  proveedor?: { ids: string[] };
 }
 
 const leer = <T,>(archivo: string): T =>
@@ -97,6 +98,7 @@ export function productos(): Producto[] {
   const ajustes = leer<Ajustes>("ajustes.json");
   const propios = leer<ProductoPropio[]>("nv-propios.json");
   const proveedor = leer<ProductoProveedor[]>("proveedor.json");
+  const coincidencias = leer<Record<string, string[] | string>>("coincidencias.json");
 
   const duplicados = new Map<string, ProductoProveedor[]>();
   for (const r of proveedor)
@@ -105,7 +107,14 @@ export function productos(): Producto[] {
   const lista: Producto[] = [];
 
   for (const p of propios) {
-    const dups = duplicados.get(p.id) ?? [];
+    // Si el proveedor también vende la pieza, la referencia es su código de fábrica (el primero verificado)
+    const verificados = coincidencias[p.id];
+    const orden = Array.isArray(verificados) ? verificados : [];
+    const posicion = (d: ProductoProveedor) => {
+      const i = Math.min(...(d.proveedor?.ids ?? []).map((id) => orden.indexOf(id)).filter((n) => n >= 0));
+      return Number.isFinite(i) ? i : 99;
+    };
+    const dups = [...(duplicados.get(p.id) ?? [])].sort((a, b) => posicion(a) - posicion(b));
     const heredaOpciones = !PALABRAS_COLOR.test(p.nombre);
     const colores = heredaOpciones ? dups.find((d) => d.colores?.length)?.colores : undefined;
     const tallas = dups.find((d) => d.tallas?.length)?.tallas;
@@ -114,7 +123,7 @@ export function productos(): Producto[] {
     );
     lista.push({
       id: p.id,
-      sku: p.sku,
+      sku: dups[0]?.sku ?? p.sku,
       slug: p.slug,
       nombre: p.nombre,
       categoria: p.categoria,

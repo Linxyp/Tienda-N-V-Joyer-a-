@@ -2,10 +2,11 @@
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Float, Sparkles } from "@react-three/drei";
-import { Bloom, EffectComposer } from "@react-three/postprocessing";
-import { useRef, useState } from "react";
+import { lazy, Suspense, useRef, useState } from "react";
 import * as THREE from "three";
 import { AvisarListo, Diamante, Estudio, esLigero, oro, useVisible } from "./piezas";
+
+const Resplandor = lazy(() => import("./Resplandor"));
 
 function Gema({ ligero }: { ligero: boolean }) {
   const grupo = useRef<THREE.Group>(null);
@@ -62,9 +63,9 @@ export default function EscenaGema({ className, alListo }: { className?: string;
         <Gema ligero={ligero} />
         <Sparkles count={ligero ? 26 : 50} scale={[7, 5, 3]} size={ligero ? 2.8 : 2.2} speed={0.3} color="#f6d98f" />
         {!ligero && (
-          <EffectComposer multisampling={0}>
-            <Bloom mipmapBlur intensity={0.9} luminanceThreshold={0.8} luminanceSmoothing={0.25} />
-          </EffectComposer>
+          <Suspense fallback={null}>
+            <Resplandor intensidad={0.9} umbral={0.8} />
+          </Suspense>
         )}
         <AvisarListo alListo={alListo} />
       </Canvas>

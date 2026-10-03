@@ -37,9 +37,11 @@ Vercel o GitHub Pages.
   Haz una copia de esta carpeta en un lugar seguro: si la pierdes, el importador no sabrá a qué tienda conectarse
   (puedes recrearla desde `data/proveedor.ejemplo.json`).
 
-La referencia que ve el cliente (`Ref. NV-…`) es el código de fábrica de la pieza: así, cuando te llega un pedido por
-WhatsApp, lo encuentras directo en el reporte. Ni el costo, ni el margen, ni la tienda del proveedor aparecen en la web
-ni en los archivos que se suben a GitHub.
+La referencia que ve el cliente (`Ref. NV-…`) es el **mismo código de fábrica que usa el proveedor** (por ejemplo
+`NV-30065` corresponde a su producto `…-30065_…`); también en tus productos que él vende. Así, cuando te llega un pedido
+por WhatsApp, lo pides igual al proveedor. Tus piezas de otra línea (por ejemplo las pulseras de hilo) conservan su
+referencia propia (`NV-P23`, `NV-T1`…). Ni el costo, ni el margen, ni la tienda del proveedor aparecen en la web ni en
+los archivos que se suben a GitHub.
 
 ## Cambiar datos del negocio
 

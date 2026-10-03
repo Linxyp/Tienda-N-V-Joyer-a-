@@ -1,7 +1,6 @@
 "use client";
 
-import { useFrame, type ThreeElements } from "@react-three/fiber";
-import { Environment, Lightformer } from "@react-three/drei";
+import { useFrame, useThree, type ThreeElements } from "@react-three/fiber";
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 
@@ -154,21 +153,60 @@ export function Balines() {
   );
 }
 
+// Iluminación de estudio: paneles y aros de luz alrededor de la joya, convertidos en un mapa de entorno (PMREM)
+// una sola vez. Se arma a mano (sin los cargadores HDR de drei) para que el paquete 3D pese menos en celulares.
+type Forma = "circulo" | "aro" | "rect";
+const LUCES: { forma: Forma; intensidad: number; pos: [number, number, number]; escala: [number, number, number]; color?: string }[] = [
+  { forma: "circulo", intensidad: 5, pos: [0, 5, -9], escala: [2, 2, 2], color: "#fff6dd" },
+  { forma: "circulo", intensidad: 2.5, pos: [-5, 1, -1], escala: [2, 2, 2] },
+  { forma: "circulo", intensidad: 2.5, pos: [-5, -1, -1], escala: [2, 2, 2] },
+  { forma: "circulo", intensidad: 2.5, pos: [10, 1, 0], escala: [8, 8, 8], color: "#ffe2a8" },
+  { forma: "aro", intensidad: 3, pos: [-0.1, -1, -5], escala: [10, 10, 10], color: "#fff1cc" },
+  { forma: "rect", intensidad: 6, pos: [0, 6, 2], escala: [12, 0.6, 1] },
+  { forma: "rect", intensidad: 4, pos: [-6, 0, 4], escala: [0.6, 8, 1], color: "#fff6e0" },
+  { forma: "rect", intensidad: 4, pos: [6, -2, 3], escala: [0.5, 6, 1] },
+];
+
+function crearEntorno(gl: THREE.WebGLRenderer, resolucion: number) {
+  const entorno = new THREE.Scene();
+  const grupo = new THREE.Group();
+  grupo.rotation.set(-Math.PI / 3, 0, 1);
+  entorno.add(grupo);
+  const geometrias: Record<Forma, THREE.BufferGeometry> = {
+    circulo: new THREE.RingGeometry(0, 0.5, 48),
+    aro: new THREE.RingGeometry(0.25, 0.5, 64),
+    rect: new THREE.PlaneGeometry(1, 1),
+  };
+  const materiales: THREE.Material[] = [];
+  for (const l of LUCES) {
+    const material = new THREE.MeshBasicMaterial({
+      color: new THREE.Color(l.color ?? "#ffffff").multiplyScalar(l.intensidad),
+      side: THREE.DoubleSide,
+      toneMapped: false,
+    });
+    materiales.push(material);
+    const panel = new THREE.Mesh(geometrias[l.forma], material);
+    panel.position.set(...l.pos);
+    panel.scale.set(...l.escala);
+    grupo.add(panel);
+  }
+  // Cada panel mira hacia la joya (centro de la escena)
+  entorno.updateMatrixWorld(true);
+  grupo.children.forEach((panel) => panel.lookAt(0, 0, 0));
+  const pmrem = new THREE.PMREMGenerator(gl);
+  const mapa = pmrem.fromScene(entorno, 0, 0.1, 100, { size: resolucion });
+  pmrem.dispose();
+  Object.values(geometrias).forEach((g) => g.dispose());
+  materiales.forEach((m) => m.dispose());
+  return mapa;
+}
+
 export function Estudio({ resolucion = 256 }: { resolucion?: number }) {
-  return (
-    <Environment resolution={resolucion} frames={1}>
-      <group rotation={[-Math.PI / 3, 0, 1]}>
-        <Lightformer form="circle" intensity={5} rotation-x={Math.PI / 2} position={[0, 5, -9]} scale={2} color="#fff6dd" />
-        <Lightformer form="circle" intensity={2.5} rotation-y={Math.PI / 2} position={[-5, 1, -1]} scale={2} />
-        <Lightformer form="circle" intensity={2.5} rotation-y={Math.PI / 2} position={[-5, -1, -1]} scale={2} />
-        <Lightformer form="circle" intensity={2.5} rotation-y={-Math.PI / 2} position={[10, 1, 0]} scale={8} color="#ffe2a8" />
-        <Lightformer form="ring" intensity={3} rotation-y={Math.PI / 2} position={[-0.1, -1, -5]} scale={10} color="#fff1cc" />
-        <Lightformer form="rect" intensity={6} position={[0, 6, 2]} rotation-x={Math.PI / 2} scale={[12, 0.6, 1]} />
-        <Lightformer form="rect" intensity={4} position={[-6, 0, 4]} rotation-y={Math.PI / 3} scale={[0.6, 8, 1]} color="#fff6e0" />
-        <Lightformer form="rect" intensity={4} position={[6, -2, 3]} rotation-y={-Math.PI / 3} scale={[0.5, 6, 1]} />
-      </group>
-    </Environment>
-  );
+  const gl = useThree((s) => s.gl);
+  const mapa = useMemo(() => crearEntorno(gl, resolucion), [gl, resolucion]);
+  useEffect(() => () => mapa.dispose(), [mapa]);
+  // Se adjunta como "environment" de la escena: ilumina y da reflejos a todos los materiales
+  return <primitive object={mapa.texture} attach="environment" />;
 }
 
 /** Pausa el render cuando la escena no está en pantalla (ahorra batería en celulares). */

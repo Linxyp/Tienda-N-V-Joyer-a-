@@ -28,8 +28,10 @@ export function Proveedores({ children }: { children: ReactNode }) {
       {conMouse && <ReactLenis root options={{ lerp: 0.1, smoothWheel: true, anchors: { offset: -90 } }} />}
       {children}
       <Toaster
-        position="bottom-center"
-        offset={88}
+        // Arriba, bajo el encabezado: así nunca tapa los botones de comprar ni el carrito
+        position="top-center"
+        offset={{ top: 84 }}
+        mobileOffset={{ top: 76 }}
         toastOptions={{
           classNames: {
             toast: "!rounded-2xl !border !border-oro-400/30 !bg-noche !text-marfil !shadow-2xl",

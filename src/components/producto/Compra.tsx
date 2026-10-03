@@ -198,7 +198,9 @@ export function Compra({ p }: { p: DatosCompra }) {
             </button>
           </div>
           <button type="button" onClick={() => alAgregar(document.querySelector("[data-foto-principal]"))} className="btn-oro h-14 flex-1">
-            <ShoppingBag className="size-5" /> Agregar a mi pedido
+            <ShoppingBag className="size-5 shrink-0" />
+            <span className="sm:hidden">Agregar</span>
+            <span className="hidden sm:inline">Agregar a mi pedido</span>
           </button>
         </div>
         <button type="button" onClick={pedirYa} className="btn-whatsapp h-14 w-full">

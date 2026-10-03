@@ -2,10 +2,11 @@
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Float, Sparkles } from "@react-three/drei";
-import { Bloom, EffectComposer } from "@react-three/postprocessing";
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { Anillo, AvisarListo, Balines, Cadena, Estudio, esLigero, useVisible } from "./piezas";
+
+const Resplandor = lazy(() => import("./Resplandor"));
 
 function Joya({ ligero }: { ligero: boolean }) {
   const grupo = useRef<THREE.Group>(null);
@@ -74,9 +75,9 @@ export default function EscenaJoya({ className, alListo }: { className?: string;
         <Joya ligero={ligero} />
         <Sparkles count={ligero ? 34 : 90} scale={[9, 6, 4]} size={ligero ? 3 : 2.4} speed={0.35} opacity={0.9} color="#f6d98f" />
         {bloom && (
-          <EffectComposer multisampling={0}>
-            <Bloom mipmapBlur intensity={0.75} luminanceThreshold={0.82} luminanceSmoothing={0.25} />
-          </EffectComposer>
+          <Suspense fallback={null}>
+            <Resplandor intensidad={0.75} umbral={0.82} />
+          </Suspense>
         )}
         <AvisarListo alListo={alListo} />
       </Canvas>
