@@ -54,11 +54,22 @@ Las categorías y sus textos están en `src/config/categorias.ts`.
 3. Si usas dominio propio, agrega en Vercel la variable `NEXT_PUBLIC_SITE_URL` con tu dominio (ej.
    `https://nvjoyeria.com`) para que los enlaces al compartir en WhatsApp/Facebook muestren la foto correcta.
 
-### Opción 2: GitHub Pages (donde está hoy el catálogo)
-El flujo `.github/workflows/publicar.yml` publica solo cada vez que subes cambios a la rama `main`.
-1. Sube el proyecto al repositorio `linxyp/Tienda-N-V-Joyer-a-` (reemplazando el catálogo anterior).
-2. En GitHub → *Settings* → *Pages* → *Source*: **GitHub Actions**.
-3. La tienda queda en https://linxyp.github.io/Tienda-N-V-Joyer-a-/
+### Opción 2: GitHub Pages (publicación actual)
+La tienda está publicada en **https://linxyp.github.io/Tienda-N-V-Joyer-a-/** desde el repositorio
+`Linxyp/Tienda-N-V-Joyer-a-`. El flujo `.github/workflows/publicar.yml` la vuelve a publicar solo cada vez que subes
+cambios a la rama `main` (tarda unos 3 minutos; el avance se ve en la pestaña *Actions* del repositorio).
+
+Para actualizar después de importar o editar productos:
+
+```bash
+npm run importar        # opcional: trae productos/precios nuevos del proveedor
+git add -A
+git commit -m "Actualizo catálogo"
+git push
+```
+
+El catálogo anterior (el HTML con las 122 joyas) quedó guardado en la rama **`catalogo-anterior`** del mismo
+repositorio, por si algún día necesitas consultarlo o restaurarlo.
 
 ## Nota para Windows
 
