@@ -302,15 +302,10 @@ export function Catalogo({
           ) : (
             <div className="grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3">
               {visibles.map((p, i) => (
-                <motion.div
-                  key={p.id}
-                  initial={{ opacity: 0, y: 24, rotateX: 10 }}
-                  animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                  transition={{ duration: 0.6, delay: Math.min(i % POR_PAGINA, 8) * 0.04, ease: [0.22, 1, 0.36, 1] }}
-                  style={{ transformPerspective: 900 }}
-                >
+                // Entrada en CSS (no espera al JavaScript): las primeras tarjetas se ven de inmediato
+                <div key={p.id} className="entrada-tarjeta" style={{ animationDelay: `${Math.min(i % POR_PAGINA, 8) * 0.04}s` }}>
                   <TarjetaProducto p={p} prioridad={i < 2} />
-                </motion.div>
+                </div>
               ))}
             </div>
           )}
@@ -400,8 +395,18 @@ function Chip({ activo, onClick, children }: { activo: boolean; onClick: () => v
 }
 
 function CategoriaChip({ href, activo, children }: { href: string; activo: boolean; children: React.ReactNode }) {
+  const ref = useRef<HTMLAnchorElement>(null);
+  // En celular la fila se desplaza de lado: la categoría activa queda centrada a la vista
+  useEffect(() => {
+    const chip = ref.current;
+    const fila = chip?.parentElement;
+    if (!activo || !chip || !fila || fila.scrollWidth <= fila.clientWidth) return;
+    const desfase = chip.getBoundingClientRect().left - fila.getBoundingClientRect().left;
+    fila.scrollLeft += desfase - (fila.clientWidth - chip.offsetWidth) / 2;
+  }, [activo]);
   return (
     <Link
+      ref={ref}
       href={href}
       className={cn(
         "shrink-0 rounded-full px-4 py-2.5 text-[0.75rem] font-bold tracking-[0.14em] uppercase transition-all duration-300",

@@ -41,6 +41,8 @@ export const metadata: Metadata = {
     "topos oro laminado",
     "cadenas oro laminado",
     "pulseras oro laminado",
+    "pulseras en balines",
+    "manillas tejidas en balines",
     "candongas",
     "dijes religiosos",
     "N&V Joyería",
@@ -64,13 +66,14 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const categorias = resumenCategorias().map(({ id, nombre, lema, total, desde, portada }) => ({
+  const categorias = resumenCategorias().map(({ id, nombre, lema, total, desde, portada, nueva }) => ({
     id,
     nombre,
     lema,
     total,
     desde,
     portada,
+    ...(nueva ? { nueva } : {}),
   }));
   return (
     <html lang="es-CO" className={`${cormorant.variable} ${manrope.variable}`}>

@@ -103,6 +103,17 @@ export function Pie() {
             © {anio} {TIENDA.nombre}. Todos los derechos reservados.
           </p>
           <p className="tracking-[0.2em] uppercase">Oro laminado 18K · Hecho para brillar</p>
+          <p>
+            Desarrollado por{" "}
+            <a
+              href="https://lux-ia.com"
+              target="_blank"
+              rel="noopener"
+              className="font-semibold text-oro-300 transition-colors hover:text-oro-100"
+            >
+              Lux IA
+            </a>
+          </p>
         </div>
       </div>
     </footer>

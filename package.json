@@ -10,6 +10,8 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "importar": "node scripts/importar-proveedor.mjs",
+    "importar-balines": "node scripts/importar-balines.mjs",
+    "desplegar": "bash data/privado/servidor/desplegar.sh",
     "migrar-catalogo-actual": "node scripts/migrar-catalogo-actual.mjs"
   },
   "dependencies": {

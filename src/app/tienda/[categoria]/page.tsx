@@ -18,9 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = categoriaPorId(categoria);
   if (!cat) return {};
   const n = productosDeCategoria(cat.id).length;
+  // "Pulseras en balines" ya dice de qué están hechas; no repetir "en oro laminado"
+  const titulo = cat.id === "balines" ? `${cat.nombre} tejidas a mano` : `${cat.nombre} en oro laminado 18K`;
   return {
-    title: `${cat.nombre} en oro laminado 18K`,
-    description: `${n} diseños de ${cat.nombre.toLowerCase()} en oro laminado 18K. ${cat.lema}. Pide por WhatsApp y paga con Nequi, Daviplata o Llave.`,
+    title: titulo,
+    description: `${n} diseños de ${titulo.charAt(0).toLowerCase()}${titulo.slice(1)}. ${cat.lema}. Pide por WhatsApp y paga con Nequi, Daviplata o Llave.`,
     alternates: { canonical: `tienda/${cat.id}/` },
   };
 }

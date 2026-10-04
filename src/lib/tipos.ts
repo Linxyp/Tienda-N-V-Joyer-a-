@@ -18,14 +18,14 @@ export interface Producto {
   precio: number;
   colores?: string[];
   tallas?: string[];
-  /** Requiere indicar una letra/inicial */
-  letra?: boolean;
+  /** Requiere indicar una inicial (o un número de iniciales, p. ej. 2 para pulseras de pareja) */
+  letra?: boolean | number;
   premium?: boolean;
   nuevo?: boolean;
   caracteristicas: string[];
   descripcion: string;
   fotos: Foto[];
-  origen: "nv" | "proveedor";
+  origen: "nv" | "proveedor" | "artesanal";
   /** Posición en el orden "Destacados" */
   orden: number;
 }

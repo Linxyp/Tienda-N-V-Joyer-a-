@@ -21,6 +21,7 @@ export interface CategoriaMenu {
   total: number;
   desde: number;
   portada: string;
+  nueva?: boolean;
 }
 
 const AVISOS = [
@@ -163,7 +164,38 @@ export function Encabezado({ categorias }: { categorias: CategoriaMenu[] }) {
                     className="absolute left-1/2 top-full w-[46rem] -translate-x-1/2 pt-3"
                   >
                     <div className="borde-oro grid grid-cols-3 gap-2 rounded-3xl bg-noche/95 p-4 shadow-2xl backdrop-blur-xl">
-                      {categorias.map((c) => (
+                      {/* La sección nueva va arriba, a lo ancho */}
+                      {categorias.filter((c) => c.nueva).map((c) => (
+                        <Link
+                          key={c.id}
+                          href={`/tienda/${c.id}/`}
+                          onClick={() => setMega(false)}
+                          className="group col-span-3 mb-1 flex items-center gap-4 rounded-2xl bg-gradient-to-r from-oro-500/20 via-oro-400/5 to-transparent p-2 pr-5 ring-1 ring-oro-400/30 transition-colors hover:from-oro-500/30"
+                        >
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={asset(c.portada)}
+                            alt=""
+                            width={56}
+                            height={70}
+                            loading="lazy"
+                            className="h-[4.2rem] w-14 rounded-xl object-cover ring-1 ring-oro-400/50 transition-transform duration-500 group-hover:scale-105"
+                          />
+                          <span className="flex-1">
+                            <span className="flex items-center gap-2 font-display text-xl leading-tight text-marfil group-hover:text-oro-200">
+                              {c.nombre}
+                              <span className="fondo-oro rounded-full px-2 py-0.5 font-sans text-[0.58rem] font-extrabold tracking-[0.14em] text-onix uppercase">
+                                Nueva
+                              </span>
+                            </span>
+                            <span className="text-[0.72rem] text-niebla">
+                              {c.lema} · {c.total} diseños · desde {precio(c.desde)}
+                            </span>
+                          </span>
+                          <ChevronDown className="size-4 -rotate-90 text-oro-300 transition-transform group-hover:translate-x-1" />
+                        </Link>
+                      ))}
+                      {categorias.filter((c) => !c.nueva).map((c) => (
                         <Link
                           key={c.id}
                           href={`/tienda/${c.id}/`}
@@ -265,11 +297,16 @@ export function Encabezado({ categorias }: { categorias: CategoriaMenu[] }) {
             </nav>
             <p className="ceja mt-8 text-oro-400">Categorías</p>
             <div className="mt-4 grid grid-cols-2 gap-3">
-              {categorias.map((c, i) => (
+              {[...categorias.filter((c) => c.nueva), ...categorias.filter((c) => !c.nueva)].map((c, i) => (
                 <motion.div key={c.id} initial={{ y: 16, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.15 + i * 0.04 }}>
                   <Link href={`/tienda/${c.id}/`} onClick={() => alternarMenu(false)} className="borde-oro relative block overflow-hidden rounded-2xl bg-carbon">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={asset(c.portada)} alt="" loading="lazy" className="aspect-[4/3] w-full object-cover opacity-80" />
+                    {c.nueva && (
+                      <span className="fondo-oro absolute left-2 top-2 rounded-full px-2 py-0.5 text-[0.58rem] font-extrabold tracking-[0.14em] text-onix uppercase">
+                        Nueva
+                      </span>
+                    )}
                     <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-onix via-onix/70 to-transparent p-3 pt-8">
                       <span className="block font-display text-lg leading-none text-marfil">{c.nombre}</span>
                       <span className="text-[0.68rem] text-niebla">{c.total} diseños</span>

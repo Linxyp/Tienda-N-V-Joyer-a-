@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Gift, HandHeart, ShieldCheck } from "lucide-react";
+import { Balines } from "@/components/inicio/Balines";
 import { Carrusel3D } from "@/components/inicio/Carrusel3D";
 import { Categorias } from "@/components/inicio/Categorias";
 import { ComoComprar } from "@/components/inicio/ComoComprar";
@@ -38,6 +39,7 @@ export default function Inicio() {
   const usados = new Set([...carrusel, ...nuevos.slice(0, 4)].map((p) => p.id));
   const favoritos = variados(todos.filter((p) => !usados.has(p.id)), 8);
   const premium = todos.filter((p) => p.premium);
+  const balines = todos.filter((p) => p.categoria === "balines");
   const paraEl = variados(
     todos.filter((p) => p.etiquetas.includes("hombre") || (p.categoria === "cadenas" && p.sub === "65")),
     8,
@@ -96,6 +98,8 @@ export default function Inicio() {
       </section>
 
       <Premium productos={variados(premium.filter((p) => p.mini2), 3)} total={premium.length} />
+
+      <Balines productos={balines} />
 
       {/* Para él */}
       {paraEl.length >= 4 && (

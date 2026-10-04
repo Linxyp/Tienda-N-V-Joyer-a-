@@ -3,6 +3,7 @@ export type CategoriaId =
   | "candongas"
   | "cadenas"
   | "pulseras"
+  | "balines"
   | "dijes"
   | "anillos"
   | "tobilleras"
@@ -21,6 +22,10 @@ export interface Categoria {
   singular: string;
   lema: string;
   subs?: Subcategoria[];
+  /** Colección recién agregada (se resalta en menús y portada) */
+  nueva?: boolean;
+  /** Nombre corto para la etiqueta de las tarjetas (si el nombre es largo) */
+  corto?: string;
 }
 
 export const CATEGORIAS: Categoria[] = [
@@ -47,7 +52,20 @@ export const CATEGORIAS: Categoria[] = [
       { id: "65", nombre: "65 cm" },
     ],
   },
-  { id: "pulseras", nombre: "Pulseras", singular: "pulsera", lema: "Para lucir en cada gesto" },
+  {
+    id: "pulseras",
+    nombre: "Pulseras",
+    singular: "pulsera",
+    lema: "Para lucir en cada gesto",
+  },
+  {
+    id: "balines",
+    nombre: "Pulseras en balines",
+    singular: "pulsera en balines",
+    lema: "Tejidas a mano, balín por balín",
+    nueva: true,
+    corto: "En balines",
+  },
   {
     id: "dijes",
     nombre: "Dijes",

@@ -805,7 +805,7 @@
     "sku": "NV-P11",
     "slug": "pulsera-balin-italiana-n-8",
     "nombre": "Pulsera Balín Italiana Nº 8",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 270000,
     "fotos": [
       {
@@ -820,7 +820,7 @@
     "sku": "NV-P12",
     "slug": "pulsera-san-miguel-arcangel-premium",
     "nombre": "Pulsera San Miguel Arcángel Premium",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 1030000,
     "descripcion": "Racimos de balines dorados tallados con dije de San Miguel Arcángel, de alas cubiertas de circones blancos y banda con su nombre. Una pieza de inspiración religiosa llena de brillo. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -839,7 +839,7 @@
     "sku": "NV-P13",
     "slug": "pulsera-esferas-negras-estriadas",
     "nombre": "Pulsera Esferas Negras Estriadas",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 140000,
     "descripcion": "Esferas negras mate de textura estriada, algunas con franja dorada, combinadas con balines tallados y un balín liso central. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -858,7 +858,7 @@
     "sku": "NV-P14",
     "slug": "pulsera-san-benito-anudada",
     "nombre": "Pulsera San Benito Anudada",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 250000,
     "descripcion": "Medalla de San Benito con balines dorados tallados separados por nudos de hilo. En la foto se muestra en versión de hilo negro y de hilo rojo. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -878,7 +878,7 @@
     "sku": "NV-P15",
     "slug": "pulsera-infantil-hilo-neon",
     "nombre": "Pulsera Infantil Hilo Neón",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 110000,
     "descripcion": "Delicado hilo multicolor en tonos neón rosa, amarillo, verde y naranja con pequeños balines dorados tallados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -898,7 +898,7 @@
     "sku": "NV-P16",
     "slug": "pulsera-san-benito",
     "nombre": "Pulsera San Benito",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 150000,
     "descripcion": "Tejido macramé color vinotinto con balines dorados lisos y medalla central de San Benito. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -917,7 +917,7 @@
     "sku": "NV-P17",
     "slug": "pulsera-bicolor-negro-y-beige",
     "nombre": "Pulsera Bicolor Negro y Beige",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 100000,
     "descripcion": "Fino tejido bicolor en negro y beige con cinco balines dorados tallados al centro. Un diseño discreto y elegante. Detalles en oro laminado 18K.",
     "fotos": [
@@ -933,7 +933,7 @@
     "sku": "NV-P18",
     "slug": "pulsera-mix-de-balines",
     "nombre": "Pulsera Mix de Balines",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 450000,
     "descripcion": "Combinación de balines dorados estriados, tallados, escarchados y lisos, con acentos en oro rosa. Cordón negro con nudo corredizo y un pequeño dije de trébol en el extremo. Detalles en oro laminado 18K.",
     "fotos": [
@@ -949,7 +949,7 @@
     "sku": "NV-P19",
     "slug": "pulsera-san-benito-circones-verdes",
     "nombre": "Pulsera San Benito Circones Verdes",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 245000,
     "descripcion": "Medalla de San Benito con balines dorados estriados y lisos y separadores con circones verdes. En la foto se muestra en versión de hilo rojo y de hilo negro. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -969,7 +969,7 @@
     "sku": "NV-P20",
     "slug": "pulsera-cuentas-franja-dorada",
     "nombre": "Pulsera Cuentas Franja Dorada",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 250000,
     "descripcion": "Balines dorados lisos y tallados combinados con cuentas mate de franja dorada. En la foto se muestra en versión negra y roja, con cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "fotos": [
@@ -985,7 +985,7 @@
     "sku": "NV-P21",
     "slug": "pulsera-placa-dios-tres-oros",
     "nombre": "Pulsera Placa Dios Tres Oros",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 130000,
     "descripcion": "Placa dorada calada con la palabra DIOS entre balines en tres tonos de oro: amarillo, rosa y blanco. En la foto se muestra en hilo beige y en hilo verde oscuro. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1005,7 +1005,7 @@
     "sku": "NV-P22",
     "slug": "pulsera-virgen-milagrosa-tejido-rojo",
     "nombre": "Pulsera Virgen Milagrosa Tejido Rojo",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 220000,
     "descripcion": "Tejido macramé rojo con medalla ovalada de la Virgen Milagrosa, balines dorados tallados y separadores con circones blancos. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1024,7 +1024,7 @@
     "sku": "NV-P23",
     "slug": "pulsera-corona-tres-oros",
     "nombre": "Pulsera Corona Tres Oros",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 180000,
     "descripcion": "Tejido negro con medallón redondo de corona, balines en tres tonos de oro y separadores con circones verdes. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1040,7 +1040,7 @@
     "sku": "NV-P24",
     "slug": "pulsera-trebol-cuentas-rosa-palo",
     "nombre": "Pulsera Trébol Cuentas Rosa Palo",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 120000,
     "descripcion": "Tejido color camel con dije de trébol dorado en relieve, borde perlado y circón central, balines lisos y cuentas mate rosa palo. En la foto, dos piezas del mismo diseño. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1056,7 +1056,7 @@
     "sku": "NV-P25",
     "slug": "pulsera-lisa-o-diamantada",
     "nombre": "Pulsera Lisa o Diamantada",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 270000,
     "fotos": [
       {
@@ -1071,7 +1071,7 @@
     "sku": "NV-P26",
     "slug": "pulsera-balin-6-doble",
     "nombre": "Pulsera Balín 6 Doble",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 420000,
     "descripcion": "Hilera de balines dorados estriados sobre hilo rojo, con cierre de nudo corredizo ajustable. Un clásico vibrante y lleno de brillo. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1090,7 +1090,7 @@
     "sku": "NV-P27",
     "slug": "pulsera-guadalupe-cuentas-lila",
     "nombre": "Pulsera Guadalupe Cuentas Lila",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 300000,
     "descripcion": "Cuentas mate color lila alternadas con balines dorados tallados y separadores de circones blancos, con dije de la Virgen de Guadalupe. Cordón lila con nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1110,7 +1110,7 @@
     "sku": "NV-P28",
     "slug": "pulsera-corazon-liso-rosa-palo",
     "nombre": "Pulsera Corazón Liso Rosa Palo",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 270000,
     "descripcion": "Tejido en tono rosa palo con balines dorados tallados de dos tamaños y un dije colgante de corazón liso. Delicada y femenina. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1126,7 +1126,7 @@
     "sku": "NV-P29",
     "slug": "pulsera-trebol-circones-cuentas-mate",
     "nombre": "Pulsera Trébol Circones Cuentas Mate",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 140000,
     "descripcion": "Cuentas mate a juego con el hilo, balines dorados tallados y dije colgante de trébol cubierto de circones blancos. En la foto se muestra en lila, rosa y negro. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1145,7 +1145,7 @@
     "sku": "NV-P30",
     "slug": "pulsera-trebol-hilo-rojo",
     "nombre": "Pulsera Trébol Hilo Rojo",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 280000,
     "descripcion": "Hilo rojo tejido en doble hilera de balines dorados lisos y escarchados, con dije de trébol en relieve, borde perlado y circón central. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1164,7 +1164,7 @@
     "sku": "NV-P31",
     "slug": "pulsera-balines-estriados-tejido-camel",
     "nombre": "Pulsera Balines Estriados Tejido Camel",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 300000,
     "descripcion": "Tejido macramé color camel con balines dorados estriados bordeados por pequeños balines lisos y un detalle cuadrado con circones. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1180,7 +1180,7 @@
     "sku": "NV-P32",
     "slug": "set-pulsera-y-anillo-herradura",
     "nombre": "Set Pulsera y Anillo Herradura",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 350000,
     "descripcion": "Conjunto en hilo negro entrelazado con pequeños tubos dorados y dije de herradura con cabeza de caballo; el anillo repite el mismo diseño. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1200,7 +1200,7 @@
     "sku": "NV-P33",
     "slug": "set-pulsera-y-anillo-guadalupe",
     "nombre": "Set Pulsera y Anillo Guadalupe",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 260000,
     "descripcion": "Conjunto en tejido macramé rojo con balines dorados tallados y medalla ovalada de la Virgen de Guadalupe; el anillo repite el mismo diseño. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1220,7 +1220,7 @@
     "sku": "NV-P34",
     "slug": "set-pulsera-y-anillo-corona",
     "nombre": "Set Pulsera y Anillo Corona",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 360000,
     "descripcion": "Conjunto en hilo negro con racimo de balines dorados lisos y medallón redondo de corona; el anillo repite el mismo diseño. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1240,7 +1240,7 @@
     "sku": "NV-P35",
     "slug": "pulsera-doble-corazon-latido",
     "nombre": "Pulsera Doble Corazón Latido",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 175000,
     "descripcion": "Tejido rosado con balines dorados tallados y dije de dos corazones con línea de latido, uno calado y otro cubierto de circones blancos. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1256,7 +1256,7 @@
     "sku": "NV-P36",
     "slug": "pulsera-tejida-trios-de-balines",
     "nombre": "Pulsera Tejida Tríos de Balines",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 250000,
     "descripcion": "Tramos de tejido negro alternados con grupos de tres balines dorados tallados. Cierre de nudo corredizo ajustable con terminales tejidos. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1272,7 +1272,7 @@
     "sku": "NV-P37",
     "slug": "pulsera-dije-geometrico-circones",
     "nombre": "Pulsera Dije Geométrico Circones",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 170000,
     "descripcion": "Tejido negro con dije geométrico facetado engastado con circones transparentes, flanqueado por balines dorados tallados y estriados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1288,7 +1288,7 @@
     "sku": "NV-P38",
     "slug": "pulsera-corona-oro-rosa",
     "nombre": "Pulsera Corona Oro Rosa",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 320000,
     "descripcion": "Cordón color camel con medallón redondo de corona y balines lisos en oro rosa alternados con balines dorados tallados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1307,7 +1307,7 @@
     "sku": "NV-P39",
     "slug": "pulsera-trebol-circones-tejido-negro",
     "nombre": "Pulsera Trébol Circones Tejido Negro",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 80000,
     "descripcion": "Tejido negro con dije de trébol cubierto de circones blancos entre dos balines dorados tallados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1323,7 +1323,7 @@
     "sku": "NV-P40",
     "slug": "pulsera-infinito-hilo-rojo",
     "nombre": "Pulsera Infinito Hilo Rojo",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 160000,
     "descripcion": "Tejido rojo en espiral con dije de infinito cubierto de circones blancos y balines dorados tallados a cada lado. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1339,7 +1339,7 @@
     "sku": "NV-P41",
     "slug": "pulsera-virgen-milagrosa-oro-rosa",
     "nombre": "Pulsera Virgen Milagrosa Oro Rosa",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 160000,
     "descripcion": "Tejido negro con medalla redonda de la Virgen Milagrosa, balines dorados tallados y acentos de balines en oro rosa. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1358,7 +1358,7 @@
     "sku": "NV-P42",
     "slug": "pulsera-virgen-milagrosa-tres-oros",
     "nombre": "Pulsera Virgen Milagrosa Tres Oros",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 200000,
     "descripcion": "Hilo negro con medalla ovalada de la Virgen Milagrosa, balines lisos en tres tonos de oro y separadores con circones. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1378,7 +1378,7 @@
     "sku": "NV-P43",
     "slug": "pulsera-guadalupe-espiral-bicolor",
     "nombre": "Pulsera Guadalupe Espiral Bicolor",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 115000,
     "descripcion": "Tejido en espiral bicolor negro y camel con dije de la Virgen de Guadalupe. Cierre de nudo corredizo ajustable en hilo negro. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1397,7 +1397,7 @@
     "sku": "NV-P44",
     "slug": "pulsera-virgen-rosa-mistica",
     "nombre": "Pulsera Virgen Rosa Mística",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 180000,
     "descripcion": "Tejido rojo con medalla ovalada de la Virgen Rosa Mística y balines dorados tallados a cada lado. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1416,7 +1416,7 @@
     "sku": "NV-P45",
     "slug": "pulsera-tejida-doble-hilera",
     "nombre": "Pulsera Tejida Doble Hilera",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 330000,
     "descripcion": "Banda tejida en hilo negro con doble hilera continua de balines dorados tallados. Un diseño sobrio de estilo masculino. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1435,7 +1435,7 @@
     "sku": "NV-P46",
     "slug": "pulsera-doble-hilera-oro-rosa",
     "nombre": "Pulsera Doble Hilera Oro Rosa",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 385000,
     "descripcion": "Tejido negro con doble hilera continua de balines tallados en tono oro rosa y terminales a juego. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1451,7 +1451,7 @@
     "sku": "NV-P47",
     "slug": "pulsera-flor-cuatro-petalos",
     "nombre": "Pulsera Flor Cuatro Pétalos",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 285000,
     "descripcion": "Cordón color camel con balines dorados lisos y tallados y dije de flor de cuatro pétalos en relieve, con borde perlado y circón central. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1470,7 +1470,7 @@
     "sku": "NV-P48",
     "slug": "pulsera-corona-trenzada-negra",
     "nombre": "Pulsera Corona Trenzada Negra",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 200000,
     "descripcion": "Trenzado negro con medallón redondo de corona, balines dorados lisos y tallados y cuentas negras con franja dorada. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1489,7 +1489,7 @@
     "sku": "NV-P49",
     "slug": "pulsera-bolsa-de-dinero",
     "nombre": "Pulsera Bolsa de Dinero",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 220000,
     "descripcion": "Tejido negro con dije colgante de bolsa de dinero con el signo del dólar, acompañado de balines dorados escarchados y lisos. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1505,7 +1505,7 @@
     "sku": "NV-P50",
     "slug": "pulsera-cruz-circones-verdes",
     "nombre": "Pulsera Cruz Circones Verdes",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 300000,
     "descripcion": "Balines dorados lisos y tallados en cordón verde, con separadores de circones verdes y dije colgante de cruz engastado en circones verdes. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1525,7 +1525,7 @@
     "sku": "NV-P51",
     "slug": "pulsera-san-benito-hilo-rojo",
     "nombre": "Pulsera San Benito Hilo Rojo",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 220000,
     "descripcion": "Hilo rojo con balines dorados tallados y medalla de San Benito. En la foto se aprecian ambas caras de la medalla: la cruz y la imagen del santo. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1545,7 +1545,7 @@
     "sku": "NV-P52",
     "slug": "pulsera-guadalupe-hilo-negro",
     "nombre": "Pulsera Guadalupe Hilo Negro",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 250000,
     "descripcion": "Hilo negro con balines dorados lisos, separador de circones negros y dije de la Virgen de Guadalupe. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1565,7 +1565,7 @@
     "sku": "NV-P53",
     "slug": "pulsera-crucifijo-hilo-rojo",
     "nombre": "Pulsera Crucifijo Hilo Rojo",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 250000,
     "descripcion": "Hilo rojo con crucifijo dorado al centro, balines tallados y cuentas rojas con franja dorada. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1585,7 +1585,7 @@
     "sku": "NV-P54",
     "slug": "pulsera-balines-escarchados-alternados",
     "nombre": "Pulsera Balines Escarchados Alternados",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 390000,
     "descripcion": "Balines dorados lisos de brillo espejo alternados con balines escarchados, sobre cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1604,7 +1604,7 @@
     "sku": "NV-P55",
     "slug": "pulsera-guadalupe-tejido-rojo",
     "nombre": "Pulsera Guadalupe Tejido Rojo",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 190000,
     "descripcion": "Tejido rojo con medalla redonda de la Virgen de Guadalupe y un balín dorado a cada lado. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1623,7 +1623,7 @@
     "sku": "NV-P56",
     "slug": "pulsera-corona-macrame-negro",
     "nombre": "Pulsera Corona Macramé Negro",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 220000,
     "descripcion": "Tejido macramé negro con medalla redonda de corona, balines dorados tallados y cuentas negras con franja dorada. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1639,7 +1639,7 @@
     "sku": "NV-P57",
     "slug": "pulsera-millonario-doble-hilera",
     "nombre": "Pulsera Millonario Doble Hilera",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 440000,
     "descripcion": "Hilo negro con doble hilera de balines dorados lisos y dije de millonario con sombrero de copa y bolsas de dinero. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1658,7 +1658,7 @@
     "sku": "NV-P58",
     "slug": "pulsera-millonario-circones-de-colores",
     "nombre": "Pulsera Millonario Circones de Colores",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 1000000,
     "descripcion": "Racimos de balines dorados tallados con un llamativo dije de millonario adornado con circones azules, rojos y blancos, que sostiene bolsas de dinero cubiertas de circones. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1677,7 +1677,7 @@
     "sku": "NV-P59",
     "slug": "pulsera-corona-circones-tejido-camel",
     "nombre": "Pulsera Corona Circones Tejido Camel",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 280000,
     "descripcion": "Tejido color camel con medallón de corona bordeado de circones, balines dorados tallados y separador con circones. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1693,7 +1693,7 @@
     "sku": "NV-P60",
     "slug": "pulsera-racimo-oro-rosa",
     "nombre": "Pulsera Racimo Oro Rosa",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 250000,
     "descripcion": "Tejido negro con un racimo central de balines lisos en oro rosa y balines dorados escarchados, rodeados de pequeños balines tallados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1709,7 +1709,7 @@
     "sku": "NV-P61",
     "slug": "pulsera-medallon-dolar",
     "nombre": "Pulsera Medallón Dólar",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 450000,
     "descripcion": "Balines dorados tallados con medallón del signo dólar enmarcado por un borde de eslabones y cuentas negras con franja dorada. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1729,7 +1729,7 @@
     "sku": "NV-P62",
     "slug": "pulsera-millonario-cuentas-verdes",
     "nombre": "Pulsera Millonario Cuentas Verdes",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 280000,
     "descripcion": "Balines dorados tallados con cuentas verde esmeralda de franja dorada y dije central de millonario con bolsas de dinero. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1745,7 +1745,7 @@
     "sku": "NV-P63",
     "slug": "pulsera-millonario-tejido-camel",
     "nombre": "Pulsera Millonario Tejido Camel",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 245000,
     "descripcion": "Tejido macramé color camel con balines dorados estriados y dije de millonario con sombrero de copa y bolsas de dinero. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1761,7 +1761,7 @@
     "sku": "NV-P64",
     "slug": "pulsera-millonario-cuentas-negras",
     "nombre": "Pulsera Millonario Cuentas Negras",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 430000,
     "descripcion": "Balines dorados tallados con cuentas negras de franjas doradas y dije de millonario al centro. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1780,7 +1780,7 @@
     "sku": "NV-P65",
     "slug": "pulsera-escarchada-centro-oro-rosa",
     "nombre": "Pulsera Escarchada Centro Oro Rosa",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 450000,
     "descripcion": "Balines dorados escarchados y lisos alternados, con dos balines en oro rosa al centro. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1799,7 +1799,7 @@
     "sku": "NV-P66",
     "slug": "pulsera-balines-escarchados-alternados-ii",
     "nombre": "Pulsera Balines Escarchados Alternados Ii",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 480000,
     "descripcion": "Hilera de balines dorados lisos y escarchados alternados con pequeños separadores dorados. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1818,7 +1818,7 @@
     "sku": "NV-P67",
     "slug": "pulsera-san-miguel-tres-oros",
     "nombre": "Pulsera San Miguel Tres Oros",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 325000,
     "descripcion": "Balines lisos y tallados en tres tonos de oro con medalla redonda de San Miguel Arcángel al centro. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1837,7 +1837,7 @@
     "sku": "NV-P68",
     "slug": "pulsera-minimalista-balines-lisos",
     "nombre": "Pulsera Minimalista Balines Lisos",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 250000,
     "descripcion": "Fina hilera de pequeños balines dorados lisos en cordón negro con nudo corredizo ajustable. Sobria y versátil. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1857,7 +1857,7 @@
     "sku": "NV-P69",
     "slug": "pulsera-avion-hilo-rojo",
     "nombre": "Pulsera Avión Hilo Rojo",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 130000,
     "descripcion": "Tejido rojo con balines dorados lisos y tallados y un delicado dije colgante de avión. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1873,7 +1873,7 @@
     "sku": "NV-P70",
     "slug": "pulsera-san-benito-cuentas-rojas",
     "nombre": "Pulsera San Benito Cuentas Rojas",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 140000,
     "descripcion": "Tejido rojo con medalla redonda de San Benito, cuentas rojas con franja dorada y balines dorados escarchados. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1892,7 +1892,7 @@
     "sku": "NV-P71",
     "slug": "pulsera-negra-mate-centro-dorado",
     "nombre": "Pulsera Negra Mate Centro Dorado",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 140000,
     "descripcion": "Cuentas negras mate con cinco balines dorados escarchados al centro. Un diseño sobrio de marcado contraste. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1911,7 +1911,7 @@
     "sku": "NV-P72",
     "slug": "pulsera-tejido-dorado-cuentas-negras",
     "nombre": "Pulsera Tejido Dorado Cuentas Negras",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 120000,
     "descripcion": "Tejido en hilo dorado con cuentas negras mate alternadas con balines dorados tallados y lisos. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "fotos": [
@@ -1927,7 +1927,7 @@
     "sku": "NV-P73",
     "slug": "pulsera-balines-tallados-hilo-negro",
     "nombre": "Pulsera Balines Tallados Hilo Negro",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 480000,
     "descripcion": "Hilera de balines dorados tallados de gran brillo con cierre de nudo corredizo en hilo negro. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1946,7 +1946,7 @@
     "sku": "NV-P74",
     "slug": "pulsera-negra-y-dorada-alternada",
     "nombre": "Pulsera Negra y Dorada Alternada",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 300000,
     "descripcion": "Cuentas negras con textura de hilo enrollado alternadas con balines dorados lisos. Cordón negro con nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1965,7 +1965,7 @@
     "sku": "NV-P75",
     "slug": "pulsera-san-benito-hilo-negro",
     "nombre": "Pulsera San Benito Hilo Negro",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 380000,
     "descripcion": "Cordón negro con medalla redonda de San Benito y balines dorados tallados y lisos. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -1985,7 +1985,7 @@
     "sku": "NV-P76",
     "slug": "pulsera-tricolor-balines-lisos",
     "nombre": "Pulsera Tricolor Balines Lisos",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 90000,
     "descripcion": "Hilo en amarillo, azul y rojo con tramos enrollados de cada color y balines dorados lisos. Cierre de nudo corredizo ajustable. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -2004,7 +2004,7 @@
     "sku": "NV-P77",
     "slug": "pulsera-balon-tejido-tricolor",
     "nombre": "Pulsera Balón Tejido Tricolor",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 140000,
     "descripcion": "Tejido trenzado en amarillo, azul y rojo con balines dorados lisos y medalla redonda de balón de fútbol. Detalles en oro laminado 18K.",
     "fotos": [
@@ -2020,7 +2020,7 @@
     "sku": "NV-P78",
     "slug": "pulsera-balon-cuentas-negras",
     "nombre": "Pulsera Balón Cuentas Negras",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 220000,
     "descripcion": "Cuentas negras con franja dorada, balines dorados lisos y medalla de balón de fútbol, en cordón negro con nudo corredizo. En la foto se muestran dos piezas. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -2039,7 +2039,7 @@
     "sku": "NV-P79",
     "slug": "pulsera-balon-hilo-tricolor",
     "nombre": "Pulsera Balón Hilo Tricolor",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 165000,
     "descripcion": "Hilo en amarillo, azul y rojo con tramos enrollados, balines dorados lisos y medalla redonda de balón de fútbol. Detalles en oro laminado 18K.",
     "etiquetas": [
@@ -2058,7 +2058,7 @@
     "sku": "NV-P80",
     "slug": "pulsera-balon-cuentas-tricolor",
     "nombre": "Pulsera Balón Cuentas Tricolor",
-    "categoria": "pulseras",
+    "categoria": "balines",
     "precio": 240000,
     "descripcion": "Cuentas estriadas amarillas, azules y rojas con balines dorados tallados y medalla de balón de fútbol. En la foto se muestran dos piezas. Detalles en oro laminado 18K.",
     "fotos": [

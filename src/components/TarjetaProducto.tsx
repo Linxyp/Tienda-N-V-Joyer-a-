@@ -21,7 +21,8 @@ export function TarjetaProducto({
   const imgRef = useRef<HTMLImageElement>(null);
   const agregar = useAgregar();
   const href = `/producto/${p.slug}/`;
-  const etiqueta = nombreSub(p.categoria, p.sub) ?? categoriaPorId(p.categoria)?.nombre;
+  const cat = categoriaPorId(p.categoria);
+  const etiqueta = nombreSub(p.categoria, p.sub) ?? cat?.corto ?? cat?.nombre;
 
   return (
     <Inclinacion3D className="group h-full rounded-[22px]" grados={8}>

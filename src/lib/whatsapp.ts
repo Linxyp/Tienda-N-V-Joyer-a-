@@ -26,7 +26,8 @@ export const enlaceWhatsApp = (texto: string) =>
 
 export function textoOpciones(o?: OpcionesElegidas) {
   if (!o) return "";
-  return [o.color && `Color: ${o.color}`, o.talla && `Talla: ${o.talla}`, o.letra && `Letra: ${o.letra}`]
+  const letra = o.letra && (o.letra.length > 1 ? `Iniciales: ${o.letra}` : `Letra: ${o.letra}`);
+  return [o.color && `Color: ${o.color}`, o.talla && `Talla: ${o.talla}`, letra]
     .filter(Boolean)
     .join(" · ");
 }

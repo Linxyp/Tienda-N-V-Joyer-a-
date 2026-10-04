@@ -9,7 +9,7 @@ import { TarjetaProducto } from "@/components/TarjetaProducto";
 import { categoriaPorId, nombreSub } from "@/config/categorias";
 import { TIENDA } from "@/config/tienda";
 import { productoPorSlug, productos, relacionados, resumen } from "@/lib/catalogo";
-import { CUIDADOS } from "@/lib/descripciones";
+import { CUIDADOS, CUIDADOS_BALINES } from "@/lib/descripciones";
 import { precio } from "@/lib/utilidades";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -127,6 +127,9 @@ export default async function PaginaProducto({ params }: Props) {
                 precio: p.precio,
                 foto: p.fotos[0].mini ?? p.fotos[0].src,
                 colores: p.colores,
+                ...(p.categoria === "balines"
+                  ? { etiquetaColor: "Color del tejido", garantia: "Los balines, por cambio de tonalidad (no aplica al hilo ni a las cuentas)." }
+                  : {}),
                 tallas: p.tallas,
                 letra: p.letra,
               }}
@@ -149,7 +152,9 @@ export default async function PaginaProducto({ params }: Props) {
                 <h2 className="mb-4 flex items-center gap-2 font-display text-2xl text-tinta">
                   <Droplets className="size-5 text-oro-600" /> Cuidados
                 </h2>
-                <p className="text-sm leading-relaxed text-piedra">{CUIDADOS}</p>
+                <p className="text-sm leading-relaxed text-piedra">
+                  {p.categoria === "balines" ? CUIDADOS_BALINES : CUIDADOS}
+                </p>
               </div>
             </div>
           </div>

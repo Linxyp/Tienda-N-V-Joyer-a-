@@ -24,6 +24,11 @@ const PLANTILLAS: Record<CategoriaId, string[]> = {
     "Delicadeza con carácter: {n}, en oro laminado 18K, cómoda para el día a día y lista para regalar.",
     "Un detalle que se siente especial: {n} en oro laminado 18K, con un acabado que resalta en tu muñeca.",
   ],
+  balines: [
+    "{n}: tejida a mano, nudo a nudo, con balines en oro laminado 18K que brillan en cada movimiento. Cómoda para todos los días.",
+    "Hecha a mano para lucir y regalar: {n}, con balines en oro laminado 18K y un tejido que combina con todo.",
+    "Un clásico artesanal que nunca falla: {n}, con balines en oro laminado 18K y terminaciones cuidadas a mano.",
+  ],
   tobilleras: [
     "{n}: un destello a cada paso, en oro laminado 18K. Liviana y cómoda, ideal para sandalias y días de sol.",
     "Femenina y versátil: {n}, en oro laminado 18K para acompañarte en tus mejores planes.",
@@ -56,6 +61,9 @@ export function describir(p: { id: string; nombre: string; categoria: CategoriaI
   if (p.sub === "religiosos" || p.sub === "cruces") texto += RELIGIOSOS;
   return texto;
 }
+
+export const CUIDADOS_BALINES =
+  "Para que los balines conserven su brillo, quítatela para bañarte, nadar o hacer ejercicio, evita perfumes y cremas, y guárdala seca en su estuche.";
 
 export const CUIDADOS =
   "Para conservar su brillo por más tiempo, evita el contacto directo con perfumes, cremas, cloro y agua salada, y guárdala seca en su estuche.";

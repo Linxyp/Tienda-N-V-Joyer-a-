@@ -3,7 +3,7 @@
 //   data/nv-propios.json   → productos propios de N&V (precio propio)
 //   data/proveedor.json    → catálogo importado del proveedor (ya con el margen aplicado al importar)
 //   data/ajustes.json      → productos ocultos, precios/nombres a mano, destacados
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { CATEGORIAS, type CategoriaId } from "@/config/categorias";
 import { describir } from "./descripciones";
@@ -28,6 +28,24 @@ interface ProductoPropio {
   descripcion?: string;
   etiquetas?: string[];
   fotos: Foto[];
+}
+
+/** Pulseras en balines tejidas a mano (importadas de Telegram; precio final ya calculado). */
+interface ProductoArtesanal {
+  id: string;
+  sku: string;
+  slug: string;
+  nombre: string;
+  descripcion: string;
+  precio: number;
+  etiquetas?: string[];
+  colores?: string[];
+  letra?: boolean | number;
+  caracteristicas: string[];
+  fotos: Foto[];
+  creado: string;
+  /** Más alto = más vendida (orden de la selección) */
+  prioridad?: number;
 }
 
 interface ProductoProveedor {
@@ -56,6 +74,7 @@ const leer = <T,>(archivo: string): T =>
 const PALABRAS_COLOR = /\b(cristal|crystal|verde|negro|negra|rojo|roja|rosa|azul|fucsia|blanco|blanca|esmerald)/i;
 
 function caracteristicasBase(nombre: string, categoria: CategoriaId, sub?: string) {
+  if (categoria === "balines") return ["Balines en oro laminado 18K", "Tejida a mano"];
   const c = ["Oro laminado 18K"];
   const largo = nombre.match(/(\d+(?:,\d+)?) cm/);
   const grosor = nombre.match(/(\d+(?:,\d+)?) mm/);
@@ -66,17 +85,22 @@ function caracteristicasBase(nombre: string, categoria: CategoriaId, sub?: strin
 }
 
 const ORDEN_CATEGORIAS: CategoriaId[] = [
-  "topos", "cadenas", "pulseras", "dijes", "candongas", "anillos", "tobilleras", "conjuntos", "rosarios",
+  "topos", "cadenas", "balines", "pulseras", "dijes", "candongas", "anillos", "tobilleras", "conjuntos", "rosarios",
 ];
+
+// Pulseras en balines: las más vendidas primero (según el orden de la selección)
+const prioridadBalines = new Map<string, number>();
 
 /** Orden "Destacados": primero los elegidos a mano y luego una mezcla variada entre categorías. */
 function ordenar(lista: Producto[], destacados: string[]) {
   const puntaje = (p: Producto) =>
-    (p.premium ? 2 : 0) +
-    (p.fotos.length >= 2 ? 1 : 0) +
-    (p.origen === "nv" ? 1.5 : 0) +
-    (p.nuevo ? 0.5 : 0) +
-    (hash(p.id) % 1000) / 1000;
+    p.origen === "artesanal"
+      ? 2.3 + 4 * (prioridadBalines.get(p.id) ?? 0) // en el orden de la selección: las más vendidas primero
+      : (p.premium ? 2 : 0) +
+        (p.fotos.length >= 2 ? 1 : 0) +
+        (p.origen === "nv" ? 1.5 : 0) +
+        (p.nuevo ? 0.5 : 0) +
+        (hash(p.id) % 1000) / 1000;
 
   const elegidos = destacados
     .map((id) => lista.find((p) => p.id === id || p.slug === id || p.sku === id))
@@ -168,6 +192,32 @@ export function productos(): Producto[] {
     });
   }
 
+  // Pulseras en balines (selección curada de las más vendidas)
+  const balines = existsSync(path.join(process.cwd(), "data", "balines.json"))
+    ? leer<ProductoArtesanal[]>("balines.json")
+    : [];
+  const maxPrioridad = Math.max(1, ...balines.map((a) => a.prioridad ?? 0));
+  for (const a of balines) {
+    prioridadBalines.set(a.id, (a.prioridad ?? 0) / maxPrioridad);
+    lista.push({
+      id: a.id,
+      sku: a.sku,
+      slug: a.slug,
+      nombre: a.nombre,
+      categoria: "balines",
+      etiquetas: [...new Set(["artesanal", "pulsera", "balines", ...(a.etiquetas ?? [])])],
+      precio: a.precio,
+      ...(a.colores?.length ? { colores: a.colores } : {}),
+      ...(a.letra ? { letra: a.letra } : {}),
+      caracteristicas: a.caracteristicas,
+      descripcion: a.descripcion,
+      fotos: a.fotos,
+      origen: "artesanal",
+      nuevo: true,
+      orden: 0,
+    });
+  }
+
   const ocultos = new Set(ajustes.ocultar ?? []);
   const visibles = lista
     .filter((p) => !ocultos.has(p.id) && !ocultos.has(p.sku) && !ocultos.has(p.slug))
@@ -222,6 +272,7 @@ export interface ResumenCategoria {
   desde: number;
   portada: string;
   portada2?: string;
+  nueva?: boolean;
 }
 
 /** Datos para las tarjetas de categorías (cantidad, precio desde y foto de portada). */
@@ -237,6 +288,7 @@ export function resumenCategorias(): ResumenCategoria[] {
       desde: Math.min(...lista.map((p) => p.precio)),
       portada: conFoto[0]?.fotos[0].mini ?? lista[0].fotos[0].src,
       portada2: conFoto[1]?.fotos[0].mini,
+      ...(c.nueva ? { nueva: true } : {}),
     };
   }).filter((c) => c.total > 0);
 }

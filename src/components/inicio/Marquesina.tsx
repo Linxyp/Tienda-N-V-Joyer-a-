@@ -9,6 +9,7 @@ const FRASES = [
   "Llave Bre-B",
   "Asesoría por WhatsApp",
   "Línea Premium italiana",
+  "Pulseras en balines",
 ];
 
 export function Marquesina() {

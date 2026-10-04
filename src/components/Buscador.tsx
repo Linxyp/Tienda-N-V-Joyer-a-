@@ -11,7 +11,7 @@ import type { ProductoResumen } from "@/lib/tipos";
 import { asset, cn, precio } from "@/lib/utilidades";
 import { useUI } from "@/store/ui";
 
-const SUGERENCIAS = ["Cadena cubana", "Topos corazón", "Pulsera clover", "San Benito", "Guadalupe", "Anillo ajustable", "Tejido chino", "Letra"];
+const SUGERENCIAS = ["Pulseras en balines", "Cadena cubana", "Topos corazón", "Pulsera clover", "San Benito", "Guadalupe", "Anillo ajustable", "Letra"];
 
 export function Buscador() {
   const abierto = useUI((s) => s.buscador);

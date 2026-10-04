@@ -22,6 +22,11 @@ const MUESTRAS: Record<string, string> = {
   Naranja: "radial-gradient(circle at 35% 30%,#ffd09a,#e0661b 70%)",
   Morado: "radial-gradient(circle at 35% 30%,#d4b0ff,#5f2bb5 70%)",
   Multicolor: "conic-gradient(#ff5d5d,#ffc75d,#7ee27e,#5dc6ff,#b07bff,#ff5d5d)",
+  Beige: "radial-gradient(circle at 35% 30%,#f3e3c8,#c4a77d 70%)",
+  "Azul cielo": "radial-gradient(circle at 35% 30%,#d5ecff,#79b6e8 70%)",
+  Lila: "radial-gradient(circle at 35% 30%,#efe0ff,#b28ddf 70%)",
+  Gris: "radial-gradient(circle at 35% 30%,#e3e3e3,#8c8c8c 70%)",
+  Turquesa: "radial-gradient(circle at 35% 30%,#b8fff4,#1fb5a3 70%)",
 };
 
 export interface DatosCompra {
@@ -32,8 +37,13 @@ export interface DatosCompra {
   precio: number;
   foto: string;
   colores?: string[];
+  /** Título del selector de color ("Color del circón" por defecto) */
+  etiquetaColor?: string;
   tallas?: string[];
-  letra?: boolean;
+  /** true = una inicial; un número = cuántas iniciales (pulseras de pareja) */
+  letra?: boolean | number;
+  /** Texto de garantía si no aplica el general */
+  garantia?: string;
 }
 
 export function Compra({ p }: { p: DatosCompra }) {
@@ -42,6 +52,7 @@ export function Compra({ p }: { p: DatosCompra }) {
   const [color, setColor] = useState<string | undefined>(p.colores?.length === 1 ? p.colores[0] : undefined);
   const [talla, setTalla] = useState<string | undefined>(p.tallas?.length === 1 ? p.tallas[0] : undefined);
   const [letra, setLetra] = useState("");
+  const nLetras = p.letra === true ? 1 : Number(p.letra || 0);
   const [faltan, setFaltan] = useState<string[]>([]);
   const sacudir = useAnimationControls();
   const botones = useRef<HTMLDivElement>(null);
@@ -60,7 +71,7 @@ export function Compra({ p }: { p: DatosCompra }) {
     const f: string[] = [];
     if (p.colores && p.colores.length > 1 && !color) f.push("color");
     if (p.tallas && p.tallas.length > 1 && !talla) f.push("talla");
-    if (p.letra && !/^[A-ZÑ]$/i.test(letra.trim())) f.push("letra");
+    if (nLetras && !new RegExp(`^[A-ZÑ]{${nLetras}}$`, "i").test(letra.trim())) f.push("letra");
     setFaltan(f);
     if (f.length) {
       sacudir.start({ x: [0, -10, 10, -6, 6, 0], transition: { duration: 0.45 } });
@@ -70,7 +81,7 @@ export function Compra({ p }: { p: DatosCompra }) {
     return {
       ...(color ? { color } : {}),
       ...(talla ? { talla } : {}),
-      ...(p.letra ? { letra: letra.trim().toUpperCase() } : {}),
+      ...(nLetras ? { letra: letra.trim().toUpperCase() } : {}),
     };
   }
 
@@ -103,7 +114,7 @@ export function Compra({ p }: { p: DatosCompra }) {
       {p.colores && p.colores.length > 0 && (
         <fieldset>
           <legend className="mb-3 flex items-baseline gap-2 text-sm font-bold text-tinta">
-            Color del circón
+            {p.etiquetaColor ?? "Color del circón"}
             {color && <span className="font-normal text-piedra">· {color}</span>}
             {faltan.includes("color") && <span className="text-xs font-semibold text-orange-700">Elige un color</span>}
           </legend>
@@ -112,7 +123,10 @@ export function Compra({ p }: { p: DatosCompra }) {
               <button
                 key={c}
                 type="button"
-                onClick={() => setColor(c)}
+                onClick={() => {
+                  setColor(c);
+                  setFaltan((f) => f.filter((x) => x !== "color"));
+                }}
                 aria-pressed={color === c}
                 className={cn(
                   "flex items-center gap-2 rounded-full py-1.5 pl-1.5 pr-4 text-sm font-semibold ring-1 transition-all",
@@ -138,7 +152,10 @@ export function Compra({ p }: { p: DatosCompra }) {
               <button
                 key={t}
                 type="button"
-                onClick={() => setTalla(t)}
+                onClick={() => {
+                  setTalla(t);
+                  setFaltan((f) => f.filter((x) => x !== "talla"));
+                }}
                 aria-pressed={talla === t}
                 className={cn(
                   "grid h-11 min-w-12 place-items-center rounded-xl px-3 text-sm font-bold ring-1 transition-all",
@@ -153,22 +170,35 @@ export function Compra({ p }: { p: DatosCompra }) {
         </fieldset>
       )}
 
-      {p.letra && (
+      {nLetras > 0 && (
         <div>
           <label className="mb-3 flex items-baseline gap-2 text-sm font-bold text-tinta" htmlFor="letra">
-            Inicial que quieres
-            {faltan.includes("letra") && <span className="text-xs font-semibold text-orange-700">Escribe una letra</span>}
+            {nLetras === 1 ? "Inicial que quieres" : `Las ${nLetras} iniciales`}
+            {faltan.includes("letra") && (
+              <span className="text-xs font-semibold text-orange-700">
+                {nLetras === 1 ? "Escribe una letra" : `Escribe ${nLetras} letras`}
+              </span>
+            )}
           </label>
           <input
             id="letra"
             value={letra}
-            onChange={(e) => setLetra(e.target.value.replace(/[^a-zñ]/gi, "").slice(0, 1).toUpperCase())}
-            placeholder="A"
-            className="campo !w-20 text-center font-display text-3xl uppercase"
+            onChange={(e) => {
+              const v = e.target.value.replace(/[^a-zñ]/gi, "").slice(0, nLetras).toUpperCase();
+              setLetra(v);
+              if (v.length === nLetras) setFaltan((f) => f.filter((x) => x !== "letra"));
+            }}
+            placeholder={"AB".slice(0, nLetras)}
+            className={cn(
+              "campo text-center font-display text-3xl uppercase",
+              nLetras === 1 ? "!w-20" : "!w-28 tracking-[0.3em]",
+            )}
             aria-invalid={faltan.includes("letra")}
-            maxLength={1}
+            maxLength={nLetras}
           />
-          <p className="mt-2 text-xs text-piedra">Confirmamos la disponibilidad de la letra por WhatsApp.</p>
+          <p className="mt-2 text-xs text-piedra">
+            Confirmamos la disponibilidad {nLetras === 1 ? "de la letra" : "de las letras"} por WhatsApp.
+          </p>
         </div>
       )}
       </motion.div>
@@ -213,7 +243,7 @@ export function Compra({ p }: { p: DatosCompra }) {
           <ShieldCheck className="size-5 shrink-0 text-oro-600" />
           <p className="text-sm text-piedra">
             <strong className="block text-tinta">Garantía</strong>
-            Hasta 5 años por cambio de tonalidad.
+            {p.garantia ?? "Hasta 5 años por cambio de tonalidad."}
           </p>
         </div>
         <div className="flex gap-3">

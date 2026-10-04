@@ -26,7 +26,7 @@ const PREGUNTAS = [
   },
   {
     p: "¿Qué garantía tienen las joyas?",
-    r: "Nuestras piezas tienen garantía de hasta 5 años por cambio de tonalidad, según la referencia. Si notas algún cambio, escríbenos con tu número de pedido y te ayudamos.",
+    r: "Nuestras piezas tienen garantía de hasta 5 años por cambio de tonalidad, según la referencia. En las pulseras en balines la garantía cubre los balines (no el hilo ni las cuentas). Si notas algún cambio, escríbenos con tu número de pedido y te ayudamos.",
   },
   {
     p: "¿Cómo cuido mis joyas para que duren más?",
@@ -34,7 +34,11 @@ const PREGUNTAS = [
   },
   {
     p: "¿Puedo elegir color, talla o letra?",
-    r: "Sí. Cuando una joya tiene varias opciones (color del circón, talla del anillo o inicial del dije) te pedimos elegirla antes de agregarla, y queda escrita en tu pedido.",
+    r: "Sí. Cuando una joya tiene varias opciones (color del circón o del tejido, talla del anillo o las iniciales) te pedimos elegirla antes de agregarla, y queda escrita en tu pedido.",
+  },
+  {
+    p: "¿Las pulseras en balines son ajustables?",
+    r: "Se tejen a mano y la mayoría tiene cierre de nudo corredizo, así que se ajustan a tu muñeca sin broches. En cada ficha verás el tipo de tejido, el tamaño de los balines y los colores disponibles.",
   },
 ];
 
