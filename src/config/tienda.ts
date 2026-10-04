@@ -6,7 +6,7 @@ export const TIENDA = {
   descripcion:
     "Joyería en oro laminado 18K: topos, candongas, cadenas, pulseras, anillos y dijes con garantía de hasta 5 años. Pide por WhatsApp y paga con Nequi, Daviplata o Llave Bre-B.",
   ciudad: "Bogotá",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://linxyp.github.io/Tienda-N-V-Joyer-a-",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://nyvjoyeria.lux-ia.com",
 
   /** WhatsApp con indicativo de Colombia, sin + ni espacios */
   whatsapp: "573132602527",

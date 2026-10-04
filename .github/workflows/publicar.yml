@@ -25,12 +25,13 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Configurar dirección del sitio
-        # El sitio vive en https://<usuario>.github.io/<repositorio>/
+        # Esta copia vive en https://<usuario>.github.io/<repositorio>/ (respaldo), pero el sitio
+        # principal es https://nyvjoyeria.lux-ia.com: los enlaces canónicos, el mapa del sitio, las
+        # vistas previas al compartir y los enlaces de los pedidos por WhatsApp apuntan allá.
         run: |
-          DUENO="${{ github.repository_owner }}"
           REPO="${{ github.event.repository.name }}"
           echo "NEXT_PUBLIC_BASE_PATH=/${REPO}" >> "$GITHUB_ENV"
-          echo "NEXT_PUBLIC_SITE_URL=https://${DUENO,,}.github.io/${REPO}" >> "$GITHUB_ENV"
+          echo "NEXT_PUBLIC_SITE_URL=https://nyvjoyeria.lux-ia.com" >> "$GITHUB_ENV"
       - run: npm run build
       - run: touch out/.nojekyll
       - uses: actions/upload-pages-artifact@v3

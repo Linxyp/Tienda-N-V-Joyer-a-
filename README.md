@@ -17,7 +17,7 @@ Vercel o GitHub Pages.
 | `npm start` | Sirve la carpeta `out/` para revisarla antes de publicar |
 | `npm run importar` | Actualiza el catálogo desde la tienda del proveedor (precios, productos nuevos y fotos) |
 | `npm run importar-balines` | Genera la sección *Pulseras en balines* desde la exportación de Telegram (ver abajo) |
-| `npm run desplegar` | Publica la tienda en el servidor de Lux IA: **https://nvjoyeria.lux-ia.com** |
+| `npm run desplegar` | Publica la tienda en el servidor de Lux IA: **https://nyvjoyeria.lux-ia.com** |
 
 ## Cómo se arma el catálogo
 
@@ -73,7 +73,7 @@ Las categorías y sus textos están en `src/config/categorias.ts`.
 
 ## Publicar
 
-### Servidor de Lux IA (publicación principal): https://nvjoyeria.lux-ia.com
+### Servidor de Lux IA (publicación principal): https://nyvjoyeria.lux-ia.com
 `npm run desplegar` compila la tienda para ese dominio, la comprime en Brotli (`scripts/precomprimir.mjs`) y la sube
 al servidor. Las instrucciones y archivos del servidor están en `data/privado/servidor/` (solo en tu computador:
 describen infraestructura que no debe quedar pública).
@@ -85,9 +85,11 @@ describen infraestructura que no debe quedar pública).
    `https://nvjoyeria.com`) para que los enlaces al compartir en WhatsApp/Facebook muestren la foto correcta.
 
 ### Opción 2: GitHub Pages (copia de respaldo, se actualiza sola)
-La tienda está publicada en **https://linxyp.github.io/Tienda-N-V-Joyer-a-/** desde el repositorio
+Copia de respaldo en **https://linxyp.github.io/Tienda-N-V-Joyer-a-/** desde el repositorio
 `Linxyp/Tienda-N-V-Joyer-a-`. El flujo `.github/workflows/publicar.yml` la vuelve a publicar solo cada vez que subes
-cambios a la rama `main` (tarda unos 3 minutos; el avance se ve en la pestaña *Actions* del repositorio).
+cambios a la rama `main` (tarda unos 3 minutos; el avance se ve en la pestaña *Actions* del repositorio). Sus enlaces
+canónicos, el mapa del sitio y los enlaces de los pedidos apuntan al sitio principal (`nyvjoyeria.lux-ia.com`), así
+Google y los clientes terminan siempre en el mismo dominio.
 
 Para actualizar después de importar o editar productos:
 
