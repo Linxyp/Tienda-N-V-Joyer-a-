@@ -5,6 +5,7 @@ import { AnimacionVuelo } from "@/components/AnimacionVuelo";
 import { Buscador } from "@/components/Buscador";
 import { CarritoPanel } from "@/components/CarritoPanel";
 import { Encabezado } from "@/components/Encabezado";
+import { PixelMeta } from "@/components/PixelMeta";
 import { Pie } from "@/components/Pie";
 import { Proveedores } from "@/components/Proveedores";
 import { WhatsAppFlotante } from "@/components/WhatsAppFlotante";
@@ -79,6 +80,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="es-CO" className={`${cormorant.variable} ${manrope.variable}`}>
       <body>
         <Proveedores>
+          <PixelMeta />
           <Encabezado categorias={categorias} />
           <main className="min-h-[60vh]">{children}</main>
           <Pie />
@@ -87,6 +89,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <AnimacionVuelo />
           <WhatsAppFlotante />
         </Proveedores>
+        {TIENDA.pixelMeta && (
+          <noscript>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              alt=""
+              src={`https://www.facebook.com/tr?id=${TIENDA.pixelMeta}&ev=PageView&noscript=1`}
+            />
+          </noscript>
+        )}
       </body>
     </html>
   );

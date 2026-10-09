@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { METODOS_PAGO, TIENDA } from "@/config/tienda";
 import type { OpcionesElegidas } from "@/lib/tipos";
 import { asset, cn, precio } from "@/lib/utilidades";
+import { datosProducto, evento } from "@/lib/pixel";
 import { enlaceWhatsApp, mensajeProducto } from "@/lib/whatsapp";
 import { MAX_CANTIDAD } from "@/store/carrito";
 import { IconoWhatsApp } from "../IconoWhatsApp";
@@ -58,6 +59,12 @@ export function Compra({ p }: { p: DatosCompra }) {
   const botones = useRef<HTMLDivElement>(null);
   const [barra, setBarra] = useState(false);
 
+  // Píxel de Meta: producto visto (sirve para remarketing y anuncios de catálogo)
+  const { sku, nombre, precio: valor } = p;
+  useEffect(() => {
+    evento("ViewContent", datosProducto({ sku, nombre, precio: valor }));
+  }, [sku, nombre, valor]);
+
   // Barra fija en celular cuando los botones principales salen de la pantalla
   useEffect(() => {
     const el = botones.current;
@@ -105,6 +112,8 @@ export function Compra({ p }: { p: DatosCompra }) {
       opciones,
       url: `${TIENDA.url}/producto/${p.slug}/`,
     });
+    // Pedido directo por WhatsApp = la conversión que optimiza la pauta
+    evento("Lead", datosProducto(p, cantidad));
     window.open(enlaceWhatsApp(texto), "_blank", "noopener,noreferrer");
   }
 

@@ -3,9 +3,10 @@
 import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import { ArrowLeft, ArrowRight, CircleCheck, Lock, MapPin, Minus, Plus, ReceiptText, Send, ShoppingBag, Trash, User } from "lucide-react";
-import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { METODOS_PAGO, metodoPorId, TIENDA, type MetodoPagoId } from "@/config/tienda";
 import { asset, cn, precio } from "@/lib/utilidades";
+import { evento } from "@/lib/pixel";
 import { enlaceWhatsApp, mensajePedido, numeroPedido, textoOpciones, type DatosCliente } from "@/lib/whatsapp";
 import { totalCarrito, unidadesCarrito, useCarrito } from "@/store/carrito";
 import { IconoWhatsApp } from "../IconoWhatsApp";
@@ -37,6 +38,14 @@ function validar(d: DatosCliente, pago: MetodoPagoId | null): Errores {
 
 const suscribirHidratacion = (aviso: () => void) => useCarrito.persist.onFinishHydration(aviso);
 
+/** Contenido del pedido en el formato del píxel de Meta (la referencia NV-… es el id del producto). */
+const datosPixel = (items: { sku: string; cantidad: number }[]) => ({
+  content_ids: items.map((i) => i.sku),
+  contents: items.map((i) => ({ id: i.sku, quantity: i.cantidad })),
+  content_type: "product",
+  num_items: items.reduce((s, i) => s + i.cantidad, 0),
+});
+
 /** Datos de envío recordados en este navegador (para no volver a escribirlos en el próximo pedido). */
 function leerDatosGuardados(): DatosCliente {
   try {
@@ -56,6 +65,14 @@ export function Checkout() {
   const [errores, setErrores] = useState<Errores>({});
   const [enviado, setEnviado] = useState<{ numero: string; enlace: string; total: number; pago: MetodoPagoId } | null>(null);
   const total = totalCarrito(items);
+
+  // Píxel de Meta: una vez por visita al formulario, cuando ya se cargó el pedido guardado
+  const inicioRegistrado = useRef(false);
+  useEffect(() => {
+    if (!hidratado || !items.length || inicioRegistrado.current) return;
+    inicioRegistrado.current = true;
+    evento("InitiateCheckout", { ...datosPixel(items), value: total, currency: "COP" });
+  }, [hidratado, items, total]);
 
   useEffect(() => {
     try {
@@ -90,6 +107,8 @@ export function Checkout() {
     const mensaje = mensajePedido({ numero, lineas, cliente, pago: pago! });
     const enlace = enlaceWhatsApp(mensaje);
     registrarPedido({ numero, fecha: new Date().toISOString(), total, pago: pago!, mensaje });
+    // Pedido enviado por WhatsApp = la conversión que optimiza la pauta (el número evita contarlo doble)
+    evento("Lead", { ...datosPixel(items), value: total, currency: "COP" }, numero);
     setEnviado({ numero, enlace, total, pago: pago! });
     window.open(enlace, "_blank", "noopener,noreferrer");
     window.scrollTo({ top: 0, behavior: "smooth" });

@@ -12,6 +12,9 @@ export const TIENDA = {
   whatsapp: "573132602527",
   whatsappVisible: "313 260 2527",
 
+  /** Píxel de Meta (Facebook/Instagram Ads). Vacío = sin píxel. */
+  pixelMeta: "1124142920303085",
+
   garantia: "Hasta 5 años de garantía por cambio de tonalidad",
   envios: "Envíos a toda Colombia",
   material: "Oro laminado 18K",
